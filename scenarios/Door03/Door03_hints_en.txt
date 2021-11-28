@@ -1,6 +1,0 @@
-Saving your engineers for the important sieges will give certainty for success.
-Killing the snake will give you access to crossbows, which will greatly improve your defenses.
-Amassing fletchers at the start might be a good idea, although scaling them back will give you a better army composition later on.
-When sieging the Wolf, slipping knights by his defenses to destroy his external economy and striking only after he has blown a full army at your walls, might eventually lead to his defeat.
-The longer you need to upgrade your technologies, the harder the enemy attacks become.
-Monks can be efficient at the start though not very good later on. I suggest unlocking technologies in the following order: Spearmen -> Crossbowmen -> Macemen or Pikemen -> Swordsmen and Knights.
