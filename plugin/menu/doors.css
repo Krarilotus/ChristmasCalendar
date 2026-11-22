@@ -110,7 +110,7 @@ body {
 }
 
 #door-text span[style*="color"] {
-  text-shadow: 0 0 1px #000, 0 0 2px #000;
+  text-shadow: 0 0 1px #000, 0 0 1px #000;
 }
 
 #door-text details {
