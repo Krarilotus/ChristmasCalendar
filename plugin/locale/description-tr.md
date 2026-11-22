@@ -19,13 +19,9 @@ Haritaların içindeki metinler (örneğin oyundaki görev brifingi) İngilizce 
 ## Bu eklentinin kullandıkları
 - Conquering Christmas eklentisinin **kar dokuları**. Takvim etkin olduğu sürece yalnızca takvim haritalarının değil, **tüm** haritaların görünümünü değiştirirler. İki eklenti aynı dokuyu değiştirdiğinde en son yüklenen kazanır. Karlı arazinin görünmesi için Conquering Christmas'ı Vanilla Retraced'ın üstünde tut.
 - Orijinal takvimin **ayarları**: dengelendiği UCP2-Legacy değişiklikleri, başlangıç altını ve kaynakları ve 16 lordun tümü için yapay zekâ kişilikleri. Bunlar öneridir: takvim başka şey öneren eklentilerin üstünde durduğu sürece geçerlidir ve istediğin zaman değiştirebilirsin.
-- **files** modülü takvim haritalarını listeler ve her gün birini açar.
 
 ## Stronghold Crusader Extreme
 Haritalar Stronghold Crusader için yapıldı ve Extreme'de listelenmez. Takvim etkin olduğu sürece ayarları ve kar dokuları Extreme'i başlattığında da geçerlidir; istemiyorsan orada devre dışı bırak.
-
-## Eski takvimden geliyorsan
-Takvimin UCP2 sürümü haritalarını oyunun maps klasörüne kopyalıyordu. Eski Door01.map … Door21.map ve Türchen01.map … Türchen21.map dosyalarını bu klasörden sil. Aksi hâlde eski kopyalar ilk günden itibaren hepsi birden listelenir ve bu eklentinin haritaları yerine oynanabilir.
 
 ## Teşekkürler
 Fikirler, çeviriler ve oyun testleri için CIO, CrusaderPilaw, GRhin, Hawk, Shadowknight, DerZigeuner, Heroesflorian, Zenace, drawk, Kimberly, Corsair_89, sid, np123, Loaf Cat ve yardım eden herkese özel teşekkürler. Kar dokuları Monsterfish'in Conquering Christmas paketidir.

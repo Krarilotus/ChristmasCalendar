@@ -19,13 +19,9 @@ A térképekben lévő szövegek (például a küldetés eligazítása a játék
 ## Mit használ ez a bővítmény
 - A Conquering Christmas bővítmény **havas textúráit**. Amíg a naptár aktív, ezek **minden** térkép kinézetét megváltoztatják, nem csak a naptár térképeiét. Ha két bővítmény ugyanazt a textúrát cseréli le, az nyer, amelyik utoljára töltődik be. Tartsd a Conquering Christmast a Vanilla Retraced fölött, hogy a havas terep látszódjon.
 - Az eredeti naptár **beállításait**: azokat az UCP2-Legacy módosításokat, amelyekre ki lett egyensúlyozva, a kezdő aranyat és nyersanyagokat, valamint mind a 16 lord MI-személyiségét. Ezek javaslatok: addig érvényesek, amíg a naptár a más értéket javasló bővítmények fölött van, és bármikor módosíthatod őket.
-- A **files** modul listázza a naptár térképeit, és naponta egyet nyit ki.
 
 ## Stronghold Crusader Extreme
 A térképek a Stronghold Crusaderhez készültek, és az Extreme-ben nem jelennek meg. Amíg a naptár aktív, a beállításai és a havas textúrák az Extreme indításakor is érvényesek, ezért ott kapcsold ki, ha nem kéred őket.
-
-## Ha a régi naptárból jössz
-A naptár UCP2-es változata a játék maps mappájába másolta a térképeit. Töröld ebből a mappából a régi Door01.map … Door21.map és Türchen01.map … Türchen21.map fájlokat. Különben a régi másolatok mind egyszerre megjelennek az első naptól, és a bővítmény térképei helyett ezek indulhatnak el.
 
 ## Köszönet
 Külön köszönet az ötletekért, fordításokért és tesztelésért: CIO, CrusaderPilaw, GRhin, Hawk, Shadowknight, DerZigeuner, Heroesflorian, Zenace, drawk, Kimberly, Corsair_89, sid, np123, Loaf Cat és mindenki más, aki segített. A havas textúrák Monsterfish Conquering Christmas csomagjából származnak.

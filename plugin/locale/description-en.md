@@ -19,13 +19,9 @@ The texts inside the maps (for example the mission briefing in the game) exist i
 ## What this plugin uses
 - **Snow textures** from the plugin Conquering Christmas. They change the look of **every** map while the calendar is active, not only the calendar maps. When two plugins replace the same texture, the one loaded last wins. Keep Conquering Christmas above Vanilla Retraced so that the snow terrain is shown.
 - **Settings** from the original calendar: the UCP2-Legacy changes it was balanced with, its start gold and goods, and its AI personalities for all 16 lords. They are suggestions: they apply while the calendar sits above other plugins that suggest something else, and you can still change them.
-- The **files** module lists the calendar maps and opens one per day.
 
 ## Stronghold Crusader Extreme
 The maps are made for Stronghold Crusader and aren't listed in Extreme. While the calendar is active, its settings and the snow textures also apply when you start Extreme, so deactivate it there if you don't want them.
-
-## Coming from the old calendar
-The UCP2 version of the calendar copied its maps into the game's maps folder. Remove the old Door01.map … Door21.map and Türchen01.map … Türchen21.map files from that folder. Otherwise the old copies are listed from the first day on, all at once, and may be played instead of the maps of this plugin.
 
 ## Thanks
 Special thanks for ideas, translations and playtesting to CIO, CrusaderPilaw, GRhin, Hawk, Shadowknight, DerZigeuner, Heroesflorian, Zenace, drawk, Kimberly, Corsair_89, sid, np123, Loaf Cat and everyone else who helped. The snow textures are Conquering Christmas by Monsterfish.

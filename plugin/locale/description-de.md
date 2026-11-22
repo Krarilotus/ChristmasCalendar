@@ -19,13 +19,9 @@ Die Texte in den Karten (etwa die Missionsbeschreibung im Spiel) gibt es auf Eng
 ## Was dieses Plugin nutzt
 - **Schneetexturen** aus dem Plugin Conquering Christmas. Sie ändern das Aussehen **jeder** Karte, solange der Kalender aktiv ist, nicht nur das der Kalenderkarten. Ersetzen zwei Plugins dieselbe Textur, gilt die zuletzt geladene. Halte Conquering Christmas über Vanilla Retraced, damit der Schnee zu sehen ist.
 - **Einstellungen** aus dem ursprünglichen Kalender: die UCP2-Legacy-Änderungen, mit denen er ausbalanciert wurde, sein Startgold und seine Startwaren und seine KI-Persönlichkeiten für alle 16 Herren. Es sind Vorschläge: Sie gelten, solange der Kalender über anderen Plugins steht, die etwas anderes vorschlagen, und du kannst sie weiterhin ändern.
-- Das Modul **files** listet die Kalenderkarten und öffnet jeden Tag eine.
 
 ## Stronghold Crusader Extreme
 Die Karten sind für Stronghold Crusader gemacht und erscheinen in Extreme nicht. Solange der Kalender aktiv ist, gelten seine Einstellungen und die Schneetexturen aber auch, wenn du Extreme startest. Deaktiviere ihn dort, wenn du sie nicht möchtest.
-
-## Umstieg vom alten Kalender
-Die UCP2-Version des Kalenders hat ihre Karten in den Kartenordner des Spiels kopiert. Entferne die alten Dateien Door01.map … Door21.map und Türchen01.map … Türchen21.map aus diesem Ordner. Sonst erscheinen die alten Kopien alle gleich ab dem ersten Tag und werden womöglich statt der Karten dieses Plugins gespielt.
 
 ## Danke
 Besonderer Dank für Ideen, Übersetzungen und das Testen geht an CIO, CrusaderPilaw, GRhin, Hawk, Shadowknight, DerZigeuner, Heroesflorian, Zenace, drawk, Kimberly, Corsair_89, sid, np123, Loaf Cat und alle anderen, die geholfen haben. Die Schneetexturen sind Conquering Christmas von Monsterfish.

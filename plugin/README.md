@@ -15,6 +15,9 @@ The Christmas calendar by Krarilotus as a plugin for the Unofficial Crusader Pat
 | `resources/ai/<Lord>/` | The calendar's AI personality (AIC) for each of the 16 lords, used through AI Swapper |
 | `locale/` | Option and page texts, and the description |
 
+## Players coming from the UCP2 calendar
+The UCP2 version of the calendar copied its maps into the game's maps folder. Remove the old Door01.map … Door21.map and Türchen01.map … Türchen21.map files from that folder. Otherwise the old copies are listed from the first day on, all at once, and may be played instead of the maps of this plugin.
+
 ## Notes for authors
 - **Dates.** `maps/*/availability.json` lists each map with its first day (format of the files module 1.5.0). The door pages use the same days (door N on 2026-12-N). To change the year, change both.
 - **Testing a date.** The files module's setting `map-availability-date: YYYY-MM-DD` makes that day count as today, both for the in-game map list and for the door pages. A small test plugin can suggest it:

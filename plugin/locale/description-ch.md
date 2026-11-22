@@ -19,13 +19,9 @@
 ## 本插件使用的内容
 - 来自 Conquering Christmas 插件的 **雪景纹理**。只要日历处于启用状态，它们会改变 **所有** 地图的外观，而不仅是日历地图。当两个插件替换同一纹理时，最后加载的那个生效。请把 Conquering Christmas 保持在 Vanilla Retraced 之上，这样才会显示雪地地形。
 - 原版日历的 **设置**：它所依据平衡的 UCP2-Legacy 修改、初始金币和物资，以及全部 16 位领主的 AI 性格。这些都是建议值：只要日历位于其他给出不同建议的插件之上就会生效，你也随时可以修改。
-- **files** 模块列出日历地图，并每天开放一张。
 
 ## Stronghold Crusader Extreme
 这些地图是为《要塞：十字军东征》制作的，不会出现在 Extreme 中。只要日历处于启用状态，它的设置和雪景纹理在启动 Extreme 时同样生效；如果你不想要，请在那里停用它。
-
-## 如果你玩过旧版日历
-UCP2 版本的日历会把地图复制到游戏的 maps 文件夹中。请从该文件夹删除旧的 Door01.map … Door21.map 和 Türchen01.map … Türchen21.map 文件。否则旧副本会从第一天起全部同时出现，并可能代替本插件的地图被打开。
 
 ## 致谢
 特别感谢 CIO、CrusaderPilaw、GRhin、Hawk、Shadowknight、DerZigeuner、Heroesflorian、Zenace、drawk、Kimberly、Corsair_89、sid、np123、Loaf Cat 以及所有其他提供帮助的人在创意、翻译和试玩方面的贡献。雪景纹理来自 Monsterfish 的 Conquering Christmas。

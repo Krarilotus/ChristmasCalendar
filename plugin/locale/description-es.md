@@ -19,13 +19,9 @@ Los textos dentro de los mapas (por ejemplo, la sesión informativa de la misió
 ## Qué usa este plugin
 - Las **texturas de nieve** del plugin Conquering Christmas. Cambian el aspecto de **todos** los mapas mientras el calendario está activo, no solo el de los mapas del calendario. Cuando dos plugins sustituyen la misma textura, gana el que se carga en último lugar. Mantén Conquering Christmas por encima de Vanilla Retraced para que se vea el terreno nevado.
 - Los **ajustes** del calendario original: los cambios de UCP2-Legacy con los que se equilibró, su oro y sus recursos iniciales, y sus personalidades de IA para los 16 señores. Son sugerencias: se aplican mientras el calendario esté por encima de otros plugins que sugieran otra cosa, y siempre puedes cambiarlas.
-- El módulo **files** muestra los mapas del calendario y abre uno al día.
 
 ## Stronghold Crusader Extreme
 Los mapas están hechos para Stronghold Crusader y no aparecen en Extreme. Mientras el calendario está activo, sus ajustes y las texturas de nieve también se aplican al iniciar Extreme, así que desactívalo allí si no los quieres.
-
-## Si vienes del calendario antiguo
-La versión del calendario para UCP2 copiaba sus mapas en la carpeta maps del juego. Borra de esa carpeta los antiguos archivos Door01.map … Door21.map y Türchen01.map … Türchen21.map. Si no, las copias antiguas aparecen todas a la vez desde el primer día y podrían jugarse en lugar de los mapas de este plugin.
 
 ## Agradecimientos
 Un agradecimiento especial por las ideas, las traducciones y las pruebas a CIO, CrusaderPilaw, GRhin, Hawk, Shadowknight, DerZigeuner, Heroesflorian, Zenace, drawk, Kimberly, Corsair_89, sid, np123, Loaf Cat y a todas las demás personas que ayudaron. Las texturas de nieve son Conquering Christmas de Monsterfish.
