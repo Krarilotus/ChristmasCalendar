@@ -126,7 +126,11 @@ body {
   font-weight: bold;
 }
 
-#door-text[dir="rtl"],
 #calendar[dir="rtl"] {
   text-align: right;
+}
+
+/* follows the intro's own direction: an English intro in a Persian page starts on the left */
+#door-text {
+  text-align: start;
 }

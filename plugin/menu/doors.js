@@ -1,7 +1,8 @@
 // Door pages of "A Crusader's Christmas".
 // Door N opens on DOOR_YEAR-12-N (local date) and stays open; later doors show when they open.
-// The date that counts as today can be set for tests with the files module's
-// "map-availability-date" (YYYY-MM-DD), the same key that dates the maps in the game.
+// The date that counts as today can be set for tests with "map-availability-date" (YYYY-MM-DD),
+// the same key that dates the maps in the game, read in the same order as the game: the
+// maploader's value wins over the files module's, and an empty maploader value clears it.
 // The page only reads; it never changes the configuration.
 
 const CalendarLogic = (() => {
@@ -18,7 +19,13 @@ const CalendarLogic = (() => {
     return String(n).padStart(2, '0');
   }
 
-  // "YYYY-MM-DD" -> yyyymmdd, or null (same rules as the files module)
+  const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+  function isLeapYear(y) {
+    return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0;
+  }
+
+  // "YYYY-MM-DD" (a real calendar date) -> yyyymmdd, or null (same rules as the files module)
   function parseDate(value) {
     if (typeof value !== 'string') return null;
     const m = value.match(/^(\d{4})-(\d{2})-(\d{2})$/);
@@ -26,8 +33,18 @@ const CalendarLogic = (() => {
     const y = Number(m[1]);
     const mo = Number(m[2]);
     const d = Number(m[3]);
-    if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
+    if (y < 1 || mo < 1 || mo > 12 || d < 1) return null;
+    const days = mo === 2 && isLeapYear(y) ? 29 : DAYS_IN_MONTH[mo - 1];
+    if (d > days) return null;
     return y * 10000 + mo * 100 + d;
+  }
+
+  // The preview date the game uses: the maploader's value if it has one (an empty value clears
+  // it), otherwise the files module's. Returns yyyymmdd or null.
+  function previewDate(filesValue, maploaderValue) {
+    const selected = maploaderValue !== undefined && maploaderValue !== null ? maploaderValue : filesValue;
+    if (selected === undefined || selected === null || selected === '') return null;
+    return parseDate(selected);
   }
 
   function dateKey(date) {
@@ -82,6 +99,7 @@ const CalendarLogic = (() => {
     DOOR_YEAR,
     STORY_DOORS,
     parseDate,
+    previewDate,
     dateKey,
     doorOpensOn,
     doorIsOpen,
@@ -146,20 +164,46 @@ const CalendarPage = (() => {
     return `${state.root}/doors/${L.doorId(n)}/${file}`;
   }
 
-  // The intros are the plugin's own HTML; still drop anything active before showing it.
+  // The intros use only these elements; a span may carry a colour for a lord's name.
+  const INTRO_TAGS = new Set(['P', 'BR', 'DETAILS', 'SUMMARY', 'EM', 'STRONG', 'SPAN']);
+  const COLOUR = /^\s*color\s*:\s*(#[0-9a-f]{3}|#[0-9a-f]{6}|[a-z]{3,20})\s*;?\s*$/i;
+
+  // Builds a new fragment from the intro: allowed elements are copied (other elements are
+  // replaced by their text and children), with no attributes except a validated colour.
   function cleanHtml(html) {
     const doc = new DOMParser().parseFromString(`<div>${html}</div>`, 'text/html');
-    doc.querySelectorAll('script, iframe, object, embed, link, meta, base, form').forEach((e) => e.remove());
-    doc.querySelectorAll('*').forEach((element) => {
-      for (const attr of [...element.attributes]) {
-        const name = attr.name.toLowerCase();
-        const value = attr.value.trim().toLowerCase();
-        if (name.startsWith('on') || ((name === 'href' || name === 'src') && value.startsWith('javascript:'))) {
-          element.removeAttribute(attr.name);
+    const source = doc.body.firstElementChild;
+    const out = document.createElement('div');
+    function copy(from, to) {
+      for (const node of from.childNodes) {
+        if (node.nodeType === 3) {
+          to.appendChild(document.createTextNode(node.nodeValue));
+        } else if (node.nodeType === 1) {
+          if (INTRO_TAGS.has(node.tagName.toUpperCase())) {
+            const element = document.createElement(node.tagName.toLowerCase());
+            if (node.tagName.toUpperCase() === 'SPAN') {
+              const match = COLOUR.exec(node.getAttribute('style') || '');
+              if (match) element.style.color = match[1];
+            }
+            copy(node, element);
+            to.appendChild(element);
+          } else if (!['SCRIPT', 'STYLE', 'TEMPLATE'].includes(node.tagName.toUpperCase())) {
+            copy(node, to);
+          }
         }
       }
-    });
-    return doc.body.firstElementChild ? doc.body.firstElementChild.innerHTML : '';
+    }
+    if (source) copy(source, out);
+    return out;
+  }
+
+  async function readIntro(n, file) {
+    if (!state.root) return null;
+    try {
+      return await HOST_FUNCTIONS.getTextFile(doorPath(n, file));
+    } catch (e) {
+      return null;
+    }
   }
 
   async function showDoor(n) {
@@ -169,43 +213,54 @@ const CalendarPage = (() => {
     });
 
     const detail = document.getElementById('door-detail');
-    detail.hidden = false;
-    document.getElementById('door-title').textContent = L.fill(await text('door_title', 'Door {n}'), { n });
-    document.getElementById('door-map').textContent = L.fill(
-      await text('door_map_hint', 'In the game: Custom Scenarios → Play a Map → {map}'),
-      { map: L.mapName(n, state.mapLanguage) },
-    );
-
     const image = document.getElementById('door-preview');
-    const previewFile = `${L.doorId(n)}_preview.jpg`;
-    image.hidden = true;
-    if (state.root && state.files.has(previewFile)) {
-      const url = await HOST_FUNCTIONS.getAssetUrl(doorPath(n, previewFile));
-      if (url && state.selected === n) {
-        image.alt = L.fill(await text('door_preview_alt', 'Overview of the map of door {n}'), { n });
-        image.src = url;
-        image.hidden = false;
-      }
-    }
-
     const target = document.getElementById('door-text');
-    const file = L.introFile(n, state.language, state.files);
-    const language = file.endsWith(`_${state.language}.html`) ? state.language : 'en';
-    let html = null;
-    if (state.root) {
-      try {
-        html = await HOST_FUNCTIONS.getTextFile(doorPath(n, file));
-      } catch (e) {
-        html = null;
-      }
+    detail.hidden = false;
+    image.hidden = true;
+    image.removeAttribute('src');
+    target.textContent = '';
+
+    const title = L.fill(await text('door_title', 'Door {n}'), { n });
+    const hint = L.fill(await text('door_map_hint', 'In the game: Custom Scenarios → Play a Map → {map}'), {
+      map: L.mapName(n, state.mapLanguage),
+    });
+    if (state.selected !== n) return;
+    document.getElementById('door-title').textContent = title;
+    document.getElementById('door-map').textContent = hint;
+
+    // the intro: the launcher language, else English
+    let file = L.introFile(n, state.language, state.files);
+    let language = file.endsWith(`_${state.language}.html`) ? state.language : 'en';
+    let html = await readIntro(n, file);
+    if (!html && language !== 'en') {
+      file = `${L.doorId(n)}_en.html`;
+      language = 'en';
+      html = await readIntro(n, file);
     }
     if (state.selected !== n) return;
     target.lang = language;
     target.dir = L.isRtl(language) ? 'rtl' : 'ltr';
     if (html) {
-      target.innerHTML = cleanHtml(html);
+      target.appendChild(cleanHtml(html));
     } else {
       target.textContent = await text('door_text_missing', 'The text for this door could not be loaded.');
+    }
+
+    // the overview picture is optional
+    const previewFile = `${L.doorId(n)}_preview.jpg`;
+    if (state.root && state.files.has(previewFile)) {
+      let url = null;
+      try {
+        url = await HOST_FUNCTIONS.getAssetUrl(doorPath(n, previewFile));
+      } catch (e) {
+        url = null;
+      }
+      const alt = L.fill(await text('door_preview_alt', 'Overview of the map of door {n}'), { n });
+      if (url && state.selected === n) {
+        image.alt = alt;
+        image.src = url;
+        image.hidden = false;
+      }
     }
   }
 
@@ -266,9 +321,10 @@ const CalendarPage = (() => {
     state.mapLanguage = mapLanguage === 'de' ? 'de' : 'en';
 
     state.today = L.dateKey(new Date());
-    const previewValue =
-      (await configValue('files.map-availability-date')) ?? (await configValue('maploader.map-availability-date'));
-    const preview = L.parseDate(previewValue);
+    const preview = L.previewDate(
+      await configValue('files.map-availability-date'),
+      await configValue('maploader.map-availability-date'),
+    );
     if (preview !== null) {
       state.today = preview;
       const note = document.getElementById('preview-date');
