@@ -2,6 +2,8 @@
 
 > **Important:** All seven target languages (`fr`, `ru`, `hu`, `tr`, `ch`, `es`, `fa`) in this folder are **machine translations** generated from the English (`DoorNN_en.html`) and German (`DoorNN_de.html`) originals and **require review by native speakers** before final release.
 
+> **Also needing native review:** the plugin's option and door-page texts (`plugin/locale/<lang>.yml`) and descriptions (`plugin/locale/description-<lang>.md`) in fr, ru, hu, tr, ch, es and fa. They were translated by Claude Opus 5.5 from the English texts while the Neon translator was out of quota. Menu names are given translated with the English name in brackets, because each language edition's exact wording wasn't checked.
+
 ---
 
 ## General Notes & Cross-Language Conventions
