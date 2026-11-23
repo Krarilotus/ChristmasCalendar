@@ -5,7 +5,7 @@ usage: python tools/build_trail.py [--check]
 Reads, from plugin/:
   maps/en/availability.json, maps/de/availability.json   the doors and their dates
   maps/en/DoorNN.map             each door's starting gold for the player (section 1058)
-  init.lua                       the number of doors it gives the German maps for
+  init.lua, menu/doors.js        their door counts (DOORS, DOOR_COUNT), which must match
 Writes, into plugin/trail/:
   calendar-trail.json            trail settings: Warchest trail, title, door positions
   calendar-trail.csv             one scenario mission per door (English texts)
@@ -112,10 +112,12 @@ def doors():
         for language, map_name in (("en", door["name"]), ("de", german_name)):
             if not os.path.exists(os.path.join(ROOT, "maps", language, map_name + ".map")):
                 raise SystemExit("missing map maps/%s/%s.map" % (language, map_name))
-    with open(os.path.join(ROOT, "init.lua"), encoding="utf-8") as handle:
-        declared = re.search(r"local DOORS = (\d+)", handle.read())
-    if declared is None or int(declared.group(1)) != len(result):
-        raise SystemExit("init.lua's DOORS must be %d, the number of doors" % len(result))
+    for path, pattern, what in ((os.path.join(ROOT, "init.lua"), r"local DOORS = (\d+)", "init.lua's DOORS"),
+                                (os.path.join(ROOT, "menu", "doors.js"), r"const DOOR_COUNT = (\d+);", "doors.js's DOOR_COUNT")):
+        with open(path, encoding="utf-8") as handle:
+            declared = re.search(pattern, handle.read())
+        if declared is None or int(declared.group(1)) != len(result):
+            raise SystemExit("%s must be %d, the number of doors" % (what, len(result)))
     return result
 
 
