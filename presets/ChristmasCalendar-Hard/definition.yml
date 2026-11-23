@@ -1,0 +1,13 @@
+name: ChristmasCalendar-Hard
+display-name: "A Crusader's Christmas: Hard"
+author: Krarilotus
+version: 1.0.0
+type: plugin
+game: [SHC==1.41]
+dependencies:
+  ChristmasCalendar: ^2.0.0
+  aiSwapper: ^1.1.0
+  framework: ^3.0.7
+  frontend: ^1.0.2
+meta:
+  version: 1.0.0
