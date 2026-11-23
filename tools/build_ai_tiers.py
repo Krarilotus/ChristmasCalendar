@@ -9,7 +9,7 @@ keeps its character. They are starting points for the author to tune.
 Writes:
   plugin/resources/ai/normal/<Lord>/, plugin/resources/ai/story/<Lord>/  character.json, meta.json
   presets/ChristmasCalendar-<Tier>/config.yml  the aiSwapper suggestions of each preset
-With --check it only compares and exits 1 when a file would change.
+With --check it only compares (line endings aside) and exits 1 when a file would change.
 """
 import json
 import os
@@ -116,7 +116,7 @@ def write(files, check):
     for name, text in files.items():
         path = os.path.join(REPO, name)
         old = open(path, encoding="utf-8", newline="").read() if os.path.exists(path) else None
-        if old != text:
+        if old is None or old.replace("\r\n", "\n") != text:
             changed.append(name)
             if not check:
                 os.makedirs(os.path.dirname(path), exist_ok=True)

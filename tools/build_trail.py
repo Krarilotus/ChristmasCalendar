@@ -3,18 +3,18 @@
 usage: python tools/build_trail.py [--check]
 
 Reads, from plugin/:
-  maps/en/availability.json      the doors and their dates (the single schedule)
+  maps/en/availability.json, maps/de/availability.json   the doors and their dates
   maps/en/DoorNN.map             each door's starting gold for the player (section 1058)
-  doors/DoorNN/DoorNN_{en,de}.html  the start of each door's intro for the trail briefing
+  init.lua                       the number of doors it gives the German maps for
 Writes, into plugin/trail/:
   calendar-trail.json            trail settings: Warchest trail, title, door positions
   calendar-trail.csv             one scenario mission per door (English texts)
   texts/german.json              the German texts
-With --check it only compares and exits 1 when a file would change.
+The trail's briefing names the door and points to its door page in the launcher; the map's own
+text shows in the game's briefing after loading. With --check it only compares (line endings
+aside) and exits 1 when a file would change or the data doesn't fit together.
 """
-import binascii
 import csv
-import html
 import io
 import json
 import os
@@ -40,94 +40,29 @@ TEXTS = {
         "trail_summary": "One door a day, from 1 December",
         "trail_locked_text": "This door opens on {date}.",
         "mission": "Door {n}",
+        "briefing": ["Door {n} of A Crusader's Christmas.", "",
+                     "The story, an overview of the map and hints",
+                     "are on this door's page in the launcher:",
+                     "the plugin's options, Door pages."],
     },
     "de": {
         "trail_title": "Weihnachtskreuzzug",
         "trail_summary": "Jeden Tag ein Türchen, ab dem 1. Dezember",
         "trail_locked_text": "Dieses Türchen öffnet sich am {date}.",
         "mission": "Türchen {n}",
+        "briefing": ["Türchen {n} des Weihnachtskreuzzugs.", "",
+                     "Die Geschichte, eine Übersicht der Karte und",
+                     "Hinweise stehen auf der Seite dieses Türchens",
+                     "im Launcher: Optionen des Plugins, Türchen."],
     },
 }
-LINE_WIDTH = 52
 LINES = 8
-
-# --- the start gold, from the door's map file ---------------------------------------------
-
-LITLEN = bytes([11, 124, 8, 7, 28, 7, 188, 13, 76, 4, 10, 8, 12, 10, 12, 10, 8, 23, 8, 9, 7, 6, 7, 8, 7, 6,
-                55, 8, 23, 24, 12, 11, 7, 9, 11, 12, 6, 7, 22, 5, 7, 24, 6, 11, 9, 6, 7, 22, 7, 11, 38, 7, 9,
-                8, 25, 11, 8, 11, 9, 12, 8, 12, 5, 38, 5, 38, 5, 11, 7, 5, 6, 21, 6, 10, 53, 8, 7, 24, 10, 27,
-                44, 253, 253, 253, 252, 252, 252, 13, 12, 45, 12, 45, 12, 61, 12, 45, 44, 173])
-LENLEN = bytes([2, 35, 36, 53, 38, 23])
-DISTLEN = bytes([2, 20, 53, 230, 247, 151, 248])
-BASE = (3, 2, 4, 5, 6, 7, 8, 9, 10, 12, 16, 24, 40, 72, 136, 264)
-EXTRA = (0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8)
-
-
-def huffman(rep):
-    lengths = []
-    for byte in rep:
-        lengths.extend([byte & 15] * ((byte >> 4) + 1))
-    counts = [0] * 14
-    for length in lengths:
-        counts[length] += 1
-    offsets = [0] * 14
-    for length in range(1, 13):
-        offsets[length + 1] = offsets[length] + counts[length]
-    symbols = [0] * len(lengths)
-    for symbol, length in enumerate(lengths):
-        if length:
-            symbols[offsets[length]] = symbol
-            offsets[length] += 1
-    return counts, symbols
-
-
-LIT, LEN, DIST = huffman(LITLEN), huffman(LENLEN), huffman(DISTLEN)
-
-
-def explode(data):
-    """PKWARE DCL decompression (the format of .map sections), after Mark Adler's blast.c."""
-    state = {"pos": 0, "buf": 0, "cnt": 0}
-
-    def bits(need):
-        while state["cnt"] < need:
-            state["buf"] |= data[state["pos"]] << state["cnt"]
-            state["pos"] += 1
-            state["cnt"] += 8
-        value = state["buf"] & ((1 << need) - 1)
-        state["buf"] >>= need
-        state["cnt"] -= need
-        return value
-
-    def decode(table):
-        counts, symbols = table
-        code = first = index = 0
-        for length in range(1, 14):
-            code |= bits(1) ^ 1
-            if code < first + counts[length]:
-                return symbols[index + code - first]
-            index += counts[length]
-            first = (first + counts[length]) << 1
-            code <<= 1
-        raise ValueError("bad code")
-
-    coded, dict_bits = bits(8), bits(8)
-    out = bytearray()
-    while True:
-        if bits(1):
-            symbol = decode(LEN)
-            length = BASE[symbol] + bits(EXTRA[symbol])
-            if length == 519:
-                return bytes(out)
-            shift = 2 if length == 2 else dict_bits
-            dist = (decode(DIST) << shift) + bits(shift) + 1
-            for _ in range(length):
-                out.append(out[-dist])
-        else:
-            out.append(decode(LIT) if coded else bits(8))
+GOLD = 15  # section 1058 holds the starting goods as ints; index 15 is gold
 
 
 def map_section(path, wanted):
-    """The data of section `wanted` of a .map file (layout as in sourcehold-maps)."""
+    """The data of section `wanted` of a .map file (layout as in sourcehold-maps). Only
+    uncompressed sections are read; compressed ones would need the game's DCL decoder."""
     with open(path, "rb") as handle:
         buf = handle.read()
     pos = 8 + struct.unpack_from("<I", buf, 4)[0]          # magic, preview
@@ -144,61 +79,49 @@ def map_section(path, wanted):
     pos += directory_size
     for i in range(count):
         if indices[i] == wanted:
-            raw = buf[pos:pos + lengths[i]]
-            if compressed[i] != 1:
-                return raw
-            usize, csize, crc = struct.unpack_from("<III", raw, 0)
-            data = explode(raw[12:12 + csize])
-            if len(data) != usize or binascii.crc32(data) != crc:
-                raise ValueError("%s: section %d checksum" % (path, wanted))
-            return data
+            if compressed[i] == 1:
+                raise SystemExit("%s: section %d is compressed; this tool reads only uncompressed ones" % (path, wanted))
+            return buf[pos:pos + lengths[i]]
         pos += lengths[i]
-    raise ValueError("%s: no section %d" % (path, wanted))
+    raise SystemExit("%s: no section %d" % (path, wanted))
 
 
 def start_gold(path):
-    # section 1058 holds the starting goods as ints; index 15 is gold
-    return struct.unpack_from("<I", map_section(path, 1058), 15 * 4)[0]
-
-# --- intros ---------------------------------------------------------------------------------
+    return struct.unpack_from("<I", map_section(path, 1058), GOLD * 4)[0]
 
 
-def intro_lines(path):
-    """The intro's first paragraph(s) without hints, wrapped into the briefing's 8 lines."""
-    with open(path, encoding="utf-8") as handle:
-        text = handle.read()
-    text = re.sub(r"(?is)<details.*?</details>", " ", text)
-    text = re.sub(r"(?is)<(script|style).*?</\1>", " ", text)
-    text = html.unescape(re.sub(r"<[^>]+>", " ", text))
-    words = text.split()
-    lines, current = [], ""
-    for word in words:
-        if len(current) + 1 + len(word) > LINE_WIDTH:
-            lines.append(current)
-            current = word
-            if len(lines) == LINES:
-                break
-        else:
-            current = (current + " " + word).strip()
-    else:
-        if current:
-            lines.append(current)
-    if len(lines) == LINES and len(" ".join(lines)) < len(" ".join(words)):
-        last = lines[-1]
-        lines[-1] = (last[:LINE_WIDTH - 1].rsplit(" ", 1)[0] + " …") if len(last) >= LINE_WIDTH - 1 else last + " …"
-    return (lines + [""] * LINES)[:LINES]
-
-# --- build ----------------------------------------------------------------------------------
+def schedule(language):
+    with open(os.path.join(ROOT, "maps", language, "availability.json"), encoding="utf-8") as handle:
+        return json.load(handle)["maps"]
 
 
 def doors():
-    with open(os.path.join(ROOT, "maps", "en", "availability.json"), encoding="utf-8") as handle:
-        schedule = json.load(handle)["maps"]
+    """The doors in date order; door N must be the N-th, with its map in both languages."""
+    english, german = schedule("en"), schedule("de")
     result = []
-    for name, date in sorted(schedule.items(), key=lambda item: item[1]):
+    for name, date in sorted(english.items(), key=lambda item: item[1]):
         number = int(re.search(r"(\d+)$", name).group(1))
         result.append({"name": name, "number": number, "date": date})
+    for index, door in enumerate(result, start=1):
+        german_name = "Türchen%02d" % door["number"]
+        if door["number"] != index:
+            raise SystemExit("door %s is mission %d of the trail; init.lua gives German maps by door number"
+                             % (door["name"], index))
+        if german.get(german_name) != door["date"]:
+            raise SystemExit("%s: no German map with the same date in maps/de/availability.json" % german_name)
+        for language, map_name in (("en", door["name"]), ("de", german_name)):
+            if not os.path.exists(os.path.join(ROOT, "maps", language, map_name + ".map")):
+                raise SystemExit("missing map maps/%s/%s.map" % (language, map_name))
+    with open(os.path.join(ROOT, "init.lua"), encoding="utf-8") as handle:
+        declared = re.search(r"local DOORS = (\d+)", handle.read())
+    if declared is None or int(declared.group(1)) != len(result):
+        raise SystemExit("init.lua's DOORS must be %d, the number of doors" % len(result))
     return result
+
+
+def briefing(language, number):
+    lines = [line.format(n=number) for line in TEXTS[language]["briefing"]]
+    return (lines + [""] * LINES)[:LINES]
 
 
 def build():
@@ -225,14 +148,11 @@ def build():
     german = {"trail_title": TEXTS["de"]["trail_title"], "trail_summary": TEXTS["de"]["trail_summary"],
               "trail_locked_text": TEXTS["de"]["trail_locked_text"], "missions": {}}
     for index, door in enumerate(entries, start=1):
-        folder = os.path.join(ROOT, "doors", "Door%02d" % door["number"])
         gold = start_gold(os.path.join(ROOT, "maps", "en", door["name"] + ".map"))
-        lines_en = intro_lines(os.path.join(folder, "Door%02d_en.html" % door["number"]))
-        lines_de = intro_lines(os.path.join(folder, "Door%02d_de.html" % door["number"]))
         writer.writerow([door["name"], TEXTS["en"]["mission"].format(n=door["number"]), "scenario", 1, 0, gold]
-                        + lines_en)
+                        + briefing("en", door["number"]))
         mission = {"mission_name": TEXTS["de"]["mission"].format(n=door["number"])}
-        for line, text in enumerate(lines_de, start=1):
+        for line, text in enumerate(briefing("de", door["number"]), start=1):
             mission["text_description_line_%02d" % line] = text
         german["missions"][str(index)] = mission
     files["calendar-trail.csv"] = out.getvalue()
@@ -246,7 +166,7 @@ def main(argv):
     for name, text in build().items():
         path = os.path.join(TRAIL, name)
         old = open(path, encoding="utf-8", newline="").read() if os.path.exists(path) else None
-        if old != text:
+        if old is None or old.replace("\r\n", "\n") != text:
             changed.append(name)
             if not check:
                 os.makedirs(os.path.dirname(path), exist_ok=True)

@@ -2,7 +2,7 @@
 -- calendar trail the same maps. The files module shows each map from the date in that folder's
 -- availability.json on, and the trail starts a door only from that date.
 local MAP_LANGUAGES = { en = true, de = true }
-local DOORS = 24
+local DOORS = 21
 
 return {
   enable = function(self, config)
