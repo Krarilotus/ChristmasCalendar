@@ -8,6 +8,8 @@ dependencies:
   ChristmasCalendar: ^2.0.0
   aiSwapper: ^1.1.0
   framework: ^3.0.7
-  frontend: ^1.0.2
+  frontend: '>=1.0.17 <2.0.0'
+family:
+  - name: christmas-calendar-difficulty
 meta:
   version: 1.0.0
