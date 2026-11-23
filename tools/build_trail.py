@@ -220,7 +220,7 @@ def build():
     header = ["map_name", "mission_name", "mission_kind", "num_players", "player1", "gold_player_1"] + [
         "text_description_line_%02d" % line for line in range(1, LINES + 1)]
     out = io.StringIO()
-    writer = csv.writer(out, lineterminator="\r\n")
+    writer = csv.writer(out, lineterminator="\n")
     writer.writerow(header)
     german = {"trail_title": TEXTS["de"]["trail_title"], "trail_summary": TEXTS["de"]["trail_summary"],
               "trail_locked_text": TEXTS["de"]["trail_locked_text"], "missions": {}}
