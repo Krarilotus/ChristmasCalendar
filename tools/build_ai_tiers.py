@@ -91,6 +91,13 @@ def preset_config(tier):
                 "                  root: ucp/plugins/ChristmasCalendar/resources/ai/%s/%s/" % (tier, lord),
                 "                  active: true",
             ]
+    lines += [
+        "    custom-skirmish-trails:",
+        "      config:",
+        "        difficulty:",
+        "          contents:",
+        "            suggested-value: %s" % tier,
+    ]
     lines.append("  plugins: {}")
     return "\n".join(lines) + "\n"
 

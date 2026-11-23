@@ -309,4 +309,9 @@ config-sparse:
                   name: "Christmas Abbot"
                   root: ucp/plugins/ChristmasCalendar/resources/ai/hard/Abbot/
                   active: true
+    custom-skirmish-trails:
+      config:
+        difficulty:
+          contents:
+            suggested-value: hard
   plugins: {}

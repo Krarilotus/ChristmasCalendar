@@ -555,6 +555,9 @@ config-sparse:
                 suggested-value: 0
     custom-skirmish-trails:
       config:
+        difficulty:
+          contents:
+            suggested-value: hard
         warchest:
           settings:
             path:
