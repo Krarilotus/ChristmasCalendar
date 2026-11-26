@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door14",
+  "mission_name": "Door 14",
+  "mission_kind": "scenario",
+  "text_description": [
+    "My Lord, my Lord! Caliph is firing on our men. He",
+    "will set us on fire, my Lord! \"Quiet, Squire! I am",
+    "dealing with the problem myself. There are also",
+    "three more plebs to be dealt with after this one.",
+    "Then we will fortify our castle and build up some",
+    "economy.\"",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door14 of the Christmas Calendar made by Krarilotus: My Lord, my Lord! Caliph is firing on our men. He will set us on fire, my Lord! Where are you? \"Quiet, Squire! I am dealing with the problem myself. My brave men will help me finish this fight! Hey, you, swordsman, help me to bring this gate down. We don't want to lose more time with this, there are also three more plebs to be dealt with after this one. So, get this done swiftly, then we will fortify our castle and build up some economy. Let's move!\"",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door07",
+  "mission_name": "Door 7",
+  "mission_kind": "scenario",
+  "text_description": [
+    "In this wild land, the market has been closed due",
+    "to the ongoing war between the Arabian and",
+    "European lords. Now is your chance, as a third",
+    "party, to push for your own victory, by playing",
+    "them against each other.",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door7 of the Christmas Calendar made by Krarilotus: In this wild land, the market has been closed due to the ongoing war between the Arabian and European lords. Now is your chance, as a third party, to push for your own victory, by playing them against each other. Plotting against them, you need to make your presence the least obvious possible. Soon enough they would turn against you, can you delay this as long as possible? And how will you deal with the scarcity of goods? Manage your economy to balance out goods consumption with production and claim the throne. Good luck my Lord!",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

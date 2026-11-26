@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door03",
+  "mission_name": "Door 3",
+  "mission_kind": "scenario",
+  "text_description": [
+    "These Animals (and Frederick) have claimed this",
+    "territory. They kidnapped our skilled craftsmen.",
+    "We really need all of them, before we can face the",
+    "Wolf. Kill them to get your workers back. You",
+    "cannot build more walls and towers either.",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door3 of the Christmas Calendar made by Krarilotus: These Animals (and Frederick) have claimed this territory. They kidnapped our skilled craftsmen; the Snake has our tanners, the Rat imprisoned our poleturners, the Pig tortures our blackmiths and Frederick snatched our armourers. We really need all of them, before we can face the Wolf. You should therefore get off your ass and kill them to get your workers back. But be careful, you cannot build more walls and towers either and your engineer supply is very limited. You also can't buy or sell any weapons. So, make the best with what you've got!",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

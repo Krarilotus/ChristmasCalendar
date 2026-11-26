@@ -1,0 +1,22 @@
+{
+  "name": "Saladin",
+  "description": "Normal difficulty of the Christmas Calendar for Saladin, derived from the hard AI AIC Tactics: He coordinates follow-up attacks and divides cavalry raids among valuable targets.",
+  "author": "Krarilotus",
+  "link": "https://github.com/Krarilotus/ChristmasCalendar",
+  "version": "1.2.1",
+  "defaultLang": "de",
+  "supportedLang": [
+    "de",
+    "en"
+  ],
+  "switched": {
+    "binks": false,
+    "speech": false,
+    "aic": true,
+    "aiv": false,
+    "lord": true,
+    "startTroops": true,
+    "lines": false,
+    "portrait": false
+  }
+}

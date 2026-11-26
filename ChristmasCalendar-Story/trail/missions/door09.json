@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door09",
+  "mission_name": "Door 9",
+  "mission_kind": "scenario",
+  "text_description": [
+    "Today you will be facing Richard together with",
+    "your ally - the Rat. We share the same",
+    "technologies, which means you must somehow win",
+    "this battle with only spearmen and archers.",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door 9 of the Christmas Calendar made by Krarilotus: Today you will be facing Richard together with your ally - the Rat. Not so fast young one, we are bound and held back by our technological pact with the Rat. We share the same technologies, which means you must somehow win this battle with only spearmen and archers. ",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

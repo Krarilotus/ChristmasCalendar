@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door19",
+  "mission_name": "Door 19",
+  "mission_kind": "scenario",
+  "text_description": [
+    "This match just started, but you planned your base",
+    "ahead. You claimed the superior position, but can",
+    "you keep up against all those six combined united",
+    "enemies around you? Better get rid of one fast, or",
+    "you risk getting crushed! But fight wisely, your",
+    "resources are limited!",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door 19 of the Christmas Calendar 2019 made by Krarilotus: This match just started, but you planned your base ahead. You claimed the superior position, but can you keep up against all those six combined united enemies around you? I doubt it! Better get rid of one fast, or you risk getting crushed! But fight wisely, your resources are limited!",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 105
+    }
+  ]
+}

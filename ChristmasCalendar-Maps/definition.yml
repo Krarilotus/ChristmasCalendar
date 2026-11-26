@@ -1,0 +1,13 @@
+name: ChristmasCalendar-Maps
+display-name: "A Crusader's Christmas: Maps"
+author: Krarilotus
+version: 1.0.0
+type: plugin
+game: [SHCE==1.41]
+tags: [maps, scenarios]
+dependencies:
+  files: =1.5.0
+  framework: ^3.0.8
+  frontend: '>=1.0.17 <2.0.0'
+meta:
+  version: 1.0.0

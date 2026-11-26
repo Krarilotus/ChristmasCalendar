@@ -1,0 +1,36 @@
+door01_story: |
+  ## Porte 1
+
+  ![Vue d'ensemble de la carte de la porte 1](doors/Door01/Door01_preview.jpg)
+
+  Un grand grincement s'échappe des gonds de ce vieux portail ouvrant sur le monde de Crusader… *depuis combien de temps était-il fermé ?*
+
+  Tu te retrouves dans un univers médiéval fantastique, soumis aux règles de Stronghold Crusader. Nous avons pris une vue d'ensemble de la mission à venir : jette un œil à l'image ci-dessus pour mesurer l'urgence de la situation.
+
+  **Ton Seigneur commence dans le coin inférieur gauche, accompagné d'une armée** que t'a fournie ton ami [**Émir**](#color:#0000ff). **La première chose que tu verras, c'est ton château en ruines** sur la droite, encerclé par tes ennemis : le [**Serpent**](#color:purple), le [**Rat**](#color:green) et [**Saladin**](#color:#008b8b).
+
+  Le [**Sultan**](#color:#b8860b) protège la porte nord du château de Saladin, tandis que le [**Shérif**](#color:#000000) s'approprie le haut de la carte, mettant l'Émir sous pression dans un combat en côte.
+
+  C'est le moment de **planifier ta stratégie à l'avance**. Tes forces de départ comprennent quelques ingénieurs pour assiéger un château ennemi, mais tu n'auras pas accès aux boucliers mobiles.
+
+  Comme promis, chaque carte s'accompagne de quelques indices. Je te conseille de n'y jeter un œil qu'en cas de grosse galère :
+
+  [Indice 1](#page:door01_hint1) [Indice 2](#page:door01_hint2) [Indice 3](#page:door01_hint3) [Indice 4](#page:door01_hint4) [Indice 5](#page:door01_hint5) [Indice 6](#page:door01_hint6) [Indice 7](#page:door01_hint7)
+
+  **Il est temps de partir au combat. Amuse-toi bien et bonne chance !**
+
+  par Krarilotus
+door01_hint1: |
+  Si tu as besoin de renforts pour viser un ennemi en particulier ou si tu manques de ressources, l'Émir est sans doute le bon allié à solliciter.
+door01_hint2: |
+  Avec une petite population, le bonus de combat maximal du facteur de peur positif s'obtient déjà en construisant 5 éléments positifs.
+door01_hint3: |
+  Les ingénieurs ne sont pas obligés de mourir avec leur engin de siège : ils peuvent en descendre et être réutilisés.
+door01_hint4: |
+  Les lanceurs de feu infligent des dégâts colossaux. Je te conseille d'éviter de rester en contrebas à leur portée, ou de les éliminer avant de marcher sur un château.
+door01_hint5: |
+  Prendre le contrôle des défenses ennemies avec tes propres troupes en gravissant leurs escaliers te donnera un gros avantage, tout en les en privant au même moment.
+door01_hint6: |
+  Les mangonneaux et les trébuchets sont d'excellents outils pour assiéger les grands châteaux. Les trébuchets peuvent tirer hors de portée des tours équipées de balistes en visant le sol juste devant elles avec l'ordre d'attaque.
+door01_hint7: |
+  Éliminer des Seigneurs augmentera ta limite d'armée pour affronter des ennemis plus coriaces.

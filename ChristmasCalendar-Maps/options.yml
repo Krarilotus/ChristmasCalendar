@@ -1,0 +1,19 @@
+meta:
+  version: 1.0.0
+options:
+- name: difficulty
+  url: ChristmasCalendar-Maps.difficulty
+  hidden: true
+  hasHeader: false
+  header: Difficulty
+  text: The difficulty whose maps are listed; a difficulty of the calendar chooses it.
+  display: Choice
+  contents:
+    choices:
+    - name: story
+      text: Story
+    - name: normal
+      text: Normal
+    - name: hard
+      text: Hard
+    value: normal

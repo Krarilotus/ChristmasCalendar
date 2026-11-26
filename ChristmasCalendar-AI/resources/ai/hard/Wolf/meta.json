@@ -1,0 +1,19 @@
+{
+  "name": "Wolf (hard)",
+  "description": "This is the behaviour for the hard difficulty Christmas Calendar for Wolf AIC Tactics: He hounds one lord until defeat and sends aggressive raids against valuable holdings.",
+  "author": "Krarilotus",
+  "link": "https://github.com/Krarilotus/ChristmasCalendar",
+  "version": "1.2.1",
+  "defaultLang": "de",
+  "supportedLang": ["de", "en"],
+  "switched": {
+    "binks": false,
+    "speech": false,
+    "aic": true,
+    "aiv": false,
+    "lord": true,
+    "startTroops": true,
+    "lines": false,
+    "portrait": false
+  }
+}

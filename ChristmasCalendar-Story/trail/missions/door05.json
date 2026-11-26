@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door05",
+  "mission_name": "Door 5",
+  "mission_kind": "scenario",
+  "text_description": [
+    "You find yourself in a volatile situation.",
+    "Frederick destroyed all your recruitment",
+    "facilities and now nobody wants to sign a contract",
+    "with you - really nobody! You need to manage those",
+    "pigs to defend, raid and attack for you.",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door5 of the Christmas Calendar made by Krarilotus: You find yourself in a volatile situation. Frederick destroyed all your recruitment facilities and now nobody wants to sign a contract with you - really nobody! Because you have no ability to recruit an army yourself, you need to manage those pigs to defend, raid and attack for you, while supporting them with the necessary supplies to do so. Care for your last standing troops and play wisely as this may be no easy task!",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

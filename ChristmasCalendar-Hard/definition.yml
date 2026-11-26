@@ -1,0 +1,19 @@
+name: ChristmasCalendar-Hard
+display-name: "A Crusader's Christmas: Hard"
+author: Krarilotus
+version: 1.0.0
+type: plugin
+game: [SHCE==1.41]
+dependencies:
+  ChristmasCalendar: ^2.0.0
+  ChristmasCalendar-Settings: ^1.0.0
+  ChristmasCalendar-AI: ^1.0.0
+  ChristmasCalendar-Balance: ^1.0.0
+  aiSwapper: ^1.1.0
+  framework: ^3.0.8
+  frontend: '>=1.0.17 <2.0.0'
+tags: [scenarios]
+family:
+  - name: christmas-calendar-difficulty
+meta:
+  version: 1.0.0

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door15",
+  "mission_name": "Door 15",
+  "mission_kind": "scenario",
+  "text_description": [
+    "My Lord, get your men ready! We are outnumbered.",
+    "We have two fletchers and one poleturner under",
+    "contract, but they won't share their secrets, so",
+    "keep them alive and running. Those abbots are",
+    "thirsty for your blood.",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door 15 of the Christmas Calendar made by Krarilotus: My Lord, get your men ready! We are outnumbered. We have two fletchers and one poleturner under contract, but they won't share their secrets, so keep them alive and running. We know how to make swords and iron armour though and should utilize monks wherever we can! Keep it cool, Sire, we dont have much to work with, and those abbots are thirsty for your blood.",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

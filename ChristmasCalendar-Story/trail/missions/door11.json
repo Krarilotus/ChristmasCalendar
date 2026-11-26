@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door11",
+  "mission_name": "Door 11",
+  "mission_kind": "scenario",
+  "text_description": [
+    "Two snakes moved into the house. Now they both",
+    "want this land for themselfs. How dare they! This",
+    "island is yours my Lord, but in Snake territory,",
+    "you are limited by technologies available to the",
+    "Snakes.",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door11 of the Christmas Calendar 2019 made by Krarilotus: Two snakes moved into the house. Now they both want this land for themselfs. How dare they! This island is yours my Lord, but do keep in mind, in Snake territory, you are limited by technologies available to the Snakes.",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

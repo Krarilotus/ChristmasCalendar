@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door16",
+  "mission_name": "Door 16",
+  "mission_kind": "scenario",
+  "text_description": [
+    "These rats are controlled by the Snake, found to",
+    "be the lord of this realm in the North-East. You",
+    "have only limited access to troops, but there is",
+    "no other way, but killing all these rats and this",
+    "snake to regain control of this realm.",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door16 of the Christmas Calendar 2019 made by Krarilotus: These rats are controlled by the Snake, found to be the lord of this realm in the North-East. You have only limited access to troops, but there is no other way, but killing all these rats and this snake to regain control of this realm and flourish in wealth and growth. Beware, the rats will attack fast and full of energy. Maybe we can use this labyrinth to our advantage? There are resources and farmland scattered around us everywhere. Take care Sire, I'm out! Peace :D",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

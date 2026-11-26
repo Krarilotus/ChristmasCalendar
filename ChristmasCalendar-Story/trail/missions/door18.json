@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door18",
+  "mission_name": "Door 18",
+  "mission_kind": "scenario",
+  "text_description": [
+    "Unfortunately, we seem to have a bad situation",
+    "here. We are stuck on wood. We got some production",
+    "up already, but that's all we can work with for",
+    "now. We must defend our existing economy and",
+    "leverage taxes to their fullest potential.",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door 18 of the Christmas Calendar 2019 made by Krarilotus. Unfortunately, we seem to have a bad situation here. We are stuck on wood. We got some production up already, but that's all we can work with for now. We must defend our existing economy and leverage taxes to their fullest potential. Keep an eye out, as your enemies will want to take advantage of our lost knowledge. I hope you can get back on track.",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

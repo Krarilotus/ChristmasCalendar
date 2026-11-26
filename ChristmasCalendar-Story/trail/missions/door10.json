@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door10",
+  "mission_name": "Door 10",
+  "mission_kind": "scenario",
+  "text_description": [
+    "We are in great danger my Lord! The sons of pigs",
+    "have you surrounded and there are no faster men",
+    "than yours to protect you. Try everything to claim",
+    "the land back from these suckers!",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door10 of the Christmas Calendar made by Krarilotus: We are in great danger my Lord! The sons of pigs have you surrounded and there are no faster men than yours to protect you. Try everything to claim the land back from these suckers! Do you like fire? I have set up some pitch gathering rigs for you.",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

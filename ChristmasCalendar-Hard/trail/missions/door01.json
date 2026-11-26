@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door01",
+  "mission_name": "Door 1",
+  "mission_kind": "scenario",
+  "text_description": [
+    "Saladin and Emir have been at war for ages.",
+    "Saladin has gained the upper hand, as he has",
+    "convinced most of the Lords of the Riverland to",
+    "fight on his behalf. Time to end this war, claim",
+    "back your keep and kill this cruel, rich man once",
+    "and for all!",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door 1 of the Christmas Calendar made by Krarilotus: Saladin and Emir have been at war for ages. Saladin has gained the upper hand, as he has convinced most of the Lords of the Riverland to fight on his behalf. It was when you visited Emir last Christmas, that Earl Doubletongue, the so called 'Snake', betrayed you and razed your castle to the ground. You are the only friend Emir has left. But his stocks are running low... Emir cannot provide you shelter forever. He has collected some troops and given you their command. Fight and reclaim some land for yourself in the far east. Should you accept, the opportunity may arise to kill the double-tongued Snake. It must have been Saladin's shiny gold that turned him against you... Time to end this war, claim back your keep and kill this cruel, rich man once and for all!",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

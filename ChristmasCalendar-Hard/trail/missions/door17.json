@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door17",
+  "mission_name": "Door 17",
+  "mission_kind": "scenario",
+  "text_description": [
+    "Shit, we got trapped in this corner! The enemies",
+    "are enclosing; closer and closer! If you don't",
+    "move fast, they will gather and build up their",
+    "fortification around us. We still have an army and",
+    "need to break free. Can you do that, Sire?",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door 17 of the Christmas Calendar 2019 made by Krarilotus: Shit, we got trapped in this corner! The enemies are enclosing; closer and closer! If you don't move fast, they will gather and build up their fortification around us. We still have an army and need to break free. Can you do that, Sire? Go give the command! We already have a castle, no time to focus on economy now, move, move, move! Do not forget to return fire behind you, as a fight lost will cost us the entire battle! One more thing, the Caliph has infiltrated our army, according to a scout report. We will kill the swordsmen that were lurking and hiding behind their covered identities for too long. Keep safe!",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

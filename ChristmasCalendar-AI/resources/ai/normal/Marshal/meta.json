@@ -1,0 +1,22 @@
+{
+  "name": "Marshal",
+  "description": "Normal difficulty of the Christmas Calendar for Marshal, derived from the hard AI AIC Tactics: He answers aggression and sends a single group to the nearest reachable target.",
+  "author": "Krarilotus",
+  "link": "https://github.com/Krarilotus/ChristmasCalendar",
+  "version": "1.2.1",
+  "defaultLang": "de",
+  "supportedLang": [
+    "de",
+    "en"
+  ],
+  "switched": {
+    "binks": false,
+    "speech": false,
+    "aic": true,
+    "aiv": false,
+    "lord": true,
+    "startTroops": true,
+    "lines": false,
+    "portrait": false
+  }
+}

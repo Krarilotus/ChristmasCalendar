@@ -1,9 +1,28 @@
-![](https://github.com/Krarilotus/ChristmasCalendar/blob/main/Door01/Door01_peview.png?raw=true)
-<p>Welcome, Strongholder to <em><strong>A Crusader's Christmas</strong></em>: the christmas calendar skirmish campaign! This mod uses the <strong>Unofficial Crusader Patch, </strong>which you can find here:<a href="https://github.com/Sh0wdown/UnofficialCrusaderPatch/releases"> https://github.com/Sh0wdown/UnofficialCrusaderPatch/releases </a></p>
-<p>But because of <strong>CIO's</strong> awesome installer, it is made available to you, without any further setup needed. Just make sure that you have given the Installer permissions to write to your gamefolder.</p>
-<p>The calendar spans <strong>over 24 maps</strong>, one for each day. A prologe to introduce the calendar and an epiloge to conclude the calendar are also part of the package.<br />Each of these is created as a <strong>skirmish scenario</strong>, playable from within the game through Custom Scenarios -&gt; Play a Map. Each map has its own introduction text, overview picture and ingame scenario description to set you up for the mission.</p>
-<p>Don&rsquo;t worry about the random banners that appear inside of the map and do not hit restart, as that will not work in these kinds of scenarios. To try again, simply either save the game after starting it and load the save, or restart it through the Custom Scenarios -&gt; Play a Map option. The map introduction inside the installer contains hints for the likely scenario that you run out of ideas on how to beat the mission.</p>
-<p>Every Day of December a new door will open to reveal its treasure <em>(the scenario of the day)</em>. <strong>The difficulty, besides the prologue and epilogue, will start around the end of the skirmish trail of the vanilla game and increase with each day</strong>. The maps are designed to be played with the provided UCP settings in the non-extreme version of Stronghold Crusader. They are balanced to be played without the use of any glitches or exploits.</p>
-<p>The 6 maps with a continuous story line are: <br /><em>Door01, Door06, Door08, Door15, Door22 and Door24</em><br />These 6 maps have a higher production value, therefore need more tactical thinking to be won, and have more challenges by design. They also come with more hints. In the likely event in which you find a map too challenging (even with the tips provided to complete it) you can just skip it and play the next day's map. You could also alternatively seek help from friends or find a playthrough on YouTube. If you want to compare your results with others, feel free to share your opinion at the location where you found out about the calendar. I wish you a happy December and hopefully a lot of challenging fun with this custom skirmish scenario trail.</p>
-<p>Special thanks for ideas, translations and playtesting to: <em>CIO, CrusaderPilaw, GRhin, Hawk, Shadowknight, DerZigeuner, Heroesflorian, Zenace, drawk, Kimberly, Corsair_89, sid, np123, Loaf Cat and anyone else who I might have forgotten here</em> (pls forgive me OwO)</p>
-<p style="text-align: right;"><strong> by Krarilotus</strong></p>
+# A Crusader's Christmas
+
+A Christmas calendar of scenario maps for Stronghold Crusader Extreme by Krarilotus, made of plugins for the Unofficial Crusader Patch 3. One door opens each day from 1 to 21 December.
+
+Each folder here is one plugin, exactly as the store installs it.
+
+| Plugin | What it is |
+|---|---|
+| `ChristmasCalendar` | **A Crusader's Christmas**, the calendar itself: the door pages in the launcher. It needs the maps, has no settings of its own and is the root of the difficulty family. |
+| `ChristmasCalendar-Maps` | The 21 scenario maps in English and German, one set per difficulty, each listed from its day on. Only the maps of the chosen difficulty are listed. |
+| `ChristmasCalendar-AI` | The AI lords of the calendar (Hard, Normal and Story) with their AI settings and their names in the game. Without a preset it uses Hard. |
+| `ChristmasCalendar-Balance` | The vanilla game with bug fixes and a few small changes, for example cheaper blacksmiths and stronger knights. Its description lists them all. |
+| `ChristmasCalendar-Settings` | The calendar's settings: start goods, fixes, hotkeys, zoom and interface options. |
+| `ChristmasCalendar-Story`, `-Normal`, `-Hard` | The difficulties. Each brings in the calendar, the settings, the AI and the balance, and has its own trail (the Extreme trail, with its own progress, chickens and troop limits), maps and AI strength. Normal is the default. |
+
+## Playing the calendar
+In the launcher, choose **A Crusader's Christmas** in Available and pick a difficulty. The launcher activates the maps, the settings, the AI and the balance with it. Choosing the calendar itself without a difficulty gives only the maps and the door pages, without settings.
+
+## Using a part alone
+Each part works without the calendar:
+- **Maps:** activate *A Crusader's Christmas: Maps*. The maps are listed under Custom Scenarios → Load a Map from their day on.
+- **AI:** activate *A Crusader's Christmas: AI* for skirmish or multiplayer games against the calendar's lords. Keep it above other plugins that choose AI lords.
+- **Balance:** activate *A Crusader's Christmas: Balance* to play skirmish or multiplayer with the calendar's balance. In multiplayer, every player needs the same plugins.
+
+## Thanks
+Special thanks for ideas, translations and playtesting to CIO, CrusaderPilaw, GRhin, Hawk, Shadowknight, DerZigeuner, Heroesflorian, Zenace, drawk, Kimberly, Corsair_89, sid, np123, Loaf Cat and everyone else who helped.
+
+Copyright © Krarilotus.

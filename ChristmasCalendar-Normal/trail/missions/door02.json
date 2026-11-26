@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door02",
+  "mission_name": "Door 2",
+  "mission_kind": "scenario",
+  "text_description": [
+    "The Sheriff has claimed this land, but to pass",
+    "onwards, you need to take it from him and his two",
+    "companions. Beware, as this could be a difficult",
+    "fight. You came with bare feet, now it's time to",
+    "build up an economy and get rolling!",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door2 of the Christmas Calendar made by Krarilotus: The Sheriff has claimed this land, but to pass onwards, you need to take it from him and his two companions. Beware, as this could be a difficult fight. You came with bare feet, now it's time to build up an economy and get rolling!",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}
