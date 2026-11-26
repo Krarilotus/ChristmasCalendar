@@ -1,0 +1,17 @@
+meta:
+  version: 1.0.0
+config-sparse:
+  modules:
+    custom-skirmish-trails:
+      config:
+        extremetrail:
+          settings:
+            path:
+              contents:
+                suggested-value: ucp/plugins/ChristmasCalendar-Hard/trail/calendar-trail.json
+  plugins:
+    ChristmasCalendar-Maps:
+      config:
+        difficulty:
+          contents:
+            suggested-value: hard

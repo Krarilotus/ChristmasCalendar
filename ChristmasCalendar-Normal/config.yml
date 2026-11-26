@@ -1,0 +1,324 @@
+meta:
+  version: 1.0.0
+config-sparse:
+  modules:
+    aiSwapper:
+      config:
+        ai:
+          rat:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Rat"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Rat/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Rat"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Rat/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Rat"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Rat/
+                  active: true
+          snake:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Snake"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Snake/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Snake"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Snake/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Snake"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Snake/
+                  active: true
+          pig:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Pig"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Pig/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Pig"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Pig/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Pig"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Pig/
+                  active: true
+          wolf:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Wolf"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Wolf/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Wolf"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Wolf/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Wolf"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Wolf/
+                  active: true
+          saladin:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Saladin"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Saladin/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Saladin"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Saladin/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Saladin"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Saladin/
+                  active: true
+          caliph:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Caliph"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Caliph/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Caliph"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Caliph/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Caliph"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Caliph/
+                  active: true
+          sultan:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Sultan"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Sultan/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Sultan"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Sultan/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Sultan"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Sultan/
+                  active: true
+          richard:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Richard"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Richard/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Richard"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Richard/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Richard"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Richard/
+                  active: true
+          frederick:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Frederick"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Frederick/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Frederick"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Frederick/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Frederick"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Frederick/
+                  active: true
+          phillip:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Phillip"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Phillip/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Phillip"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Phillip/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Phillip"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Phillip/
+                  active: true
+          wazir:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Wazir"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Wazir/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Wazir"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Wazir/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Wazir"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Wazir/
+                  active: true
+          emir:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Emir"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Emir/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Emir"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Emir/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Emir"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Emir/
+                  active: true
+          nizar:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Nizar"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Nizar/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Nizar"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Nizar/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Nizar"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Nizar/
+                  active: true
+          sheriff:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Sheriff"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Sheriff/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Sheriff"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Sheriff/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Sheriff"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Sheriff/
+                  active: true
+          marshal:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Marshal"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Marshal/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Marshal"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Marshal/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Marshal"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Marshal/
+                  active: true
+          abbot:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Abbot"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Abbot/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Abbot"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Abbot/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Abbot"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/normal/Abbot/
+                  active: true
+    custom-skirmish-trails:
+      config:
+        extremetrail:
+          settings:
+            path:
+              contents:
+                suggested-value: ucp/plugins/ChristmasCalendar-Normal/trail/calendar-trail.json
+  plugins:
+    ChristmasCalendar-Maps:
+      config:
+        difficulty:
+          contents:
+            suggested-value: normal

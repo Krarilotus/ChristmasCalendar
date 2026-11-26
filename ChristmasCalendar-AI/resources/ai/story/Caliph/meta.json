@@ -1,0 +1,22 @@
+{
+  "name": "Caliph (ez)",
+  "description": "Story difficulty of the Christmas Calendar for Caliph, derived from the hard AI AIC Tactics: He hounds a single opponent and sends several groups after food production.",
+  "author": "Krarilotus",
+  "link": "https://github.com/Krarilotus/ChristmasCalendar",
+  "version": "1.2.1",
+  "defaultLang": "de",
+  "supportedLang": [
+    "de",
+    "en"
+  ],
+  "switched": {
+    "binks": false,
+    "speech": false,
+    "aic": true,
+    "aiv": false,
+    "lord": true,
+    "startTroops": true,
+    "lines": false,
+    "portrait": false
+  }
+}

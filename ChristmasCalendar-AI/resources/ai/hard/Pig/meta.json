@@ -1,0 +1,19 @@
+{
+  "name": "Pig (hard)",
+  "description": "This is the behaviour for the hard difficulty Christmas Calendar for Pig AIC Tactics: He keeps his food raiders together and presses the attack under fire.",
+  "author": "Krarilotus",
+  "link": "https://github.com/Krarilotus/ChristmasCalendar",
+  "version": "1.2.1",
+  "defaultLang": "de",
+  "supportedLang": ["de", "en"],
+  "switched": {
+    "binks": false,
+    "speech": false,
+    "aic": true,
+    "aiv": false,
+    "lord": true,
+    "startTroops": true,
+    "lines": false,
+    "portrait": false
+  }
+}

@@ -1,0 +1,36 @@
+door01_story: |
+  ## Puerta 1
+
+  ![Vista general del mapa de la puerta 1](doors/Door01/Door01_preview.jpg)
+
+  Un fuerte chirrido brota de las bisagras de este viejo portal hacia el mundo de Crusader… *¿cuánto tiempo lleva cerrado?*
+
+  Te encuentras en un mundo medieval fantástico donde seguirás las reglas de Stronghold Crusader. Hemos tomado una vista general de la misión que te espera; mírala arriba para hacerte una idea de la urgencia de la situación.
+
+  **Tu Señor empieza en la esquina inferior izquierda, acompañado de un ejército** que te ha prestado tu amigo [**Emir**](#color:#0000ff). **Lo primero que verás es tu castillo arrasado** a la derecha, rodeado por tus enemigos: la [**Serpiente**](#color:purple), la [**Rata**](#color:green) y [**Saladino**](#color:#008b8b).
+
+  El [**Sultán**](#color:#b8860b) protege la puerta norte del castillo de Saladino, mientras que el [**Sheriff**](#color:#000000) domina la parte superior del mapa y presiona al Emir en una batalla cuesta arriba.
+
+  Es el momento de **planificar tu estrategia con antelación**. Tus fuerzas iniciales incluyen algunos ingenieros para asediar un castillo enemigo, pero no tendrás acceso a escudos portátiles.
+
+  Como prometimos, cada mapa viene con algunas pistas. Te aconsejo echar un vistazo solo si de verdad estás en apuros:
+
+  [Pista 1](#page:door01_hint1) [Pista 2](#page:door01_hint2) [Pista 3](#page:door01_hint3) [Pista 4](#page:door01_hint4) [Pista 5](#page:door01_hint5) [Pista 6](#page:door01_hint6) [Pista 7](#page:door01_hint7)
+
+  **Es hora de lanzarse a la batalla. ¡Diviértete y buena suerte!**
+
+  por Krarilotus
+door01_hint1: |
+  Si necesitas refuerzos contra un enemigo concreto o te estás quedando sin suministros, el Emir puede ser la persona indicada a la que pedírselo.
+door01_hint2: |
+  Con una población pequeña, el máximo bono de combate por factor de miedo positivo ya se alcanza construyendo 5 cosas buenas.
+door01_hint3: |
+  Los ingenieros no tienen por qué morir con la máquina de asedio que manejan; pueden abandonarla y reutilizarse.
+door01_hint4: |
+  Los lanzafuegos causan un daño enorme. Te diría que evites quedarte en terreno bajo dentro de su alcance o los elimines antes de marchar sobre un castillo.
+door01_hint5: |
+  Tomar el control de las defensas enemigas subiendo por sus escaleras con tus propias tropas te dará una gran ventaja y se la arrebatará a ellos al mismo tiempo.
+door01_hint6: |
+  Los mangoneles y trabuquetes son herramientas geniales para asediar grandes castillos. Los trabuquetes pueden superar el alcance de las torres con balista si disparas con orden de ataque justo delante de ellas.
+door01_hint7: |
+  Eliminar Señores aumentará tu límite de ejército para enfrentarte a enemigos más fuertes.

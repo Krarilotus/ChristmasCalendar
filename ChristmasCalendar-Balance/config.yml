@@ -1,0 +1,88 @@
+config-sparse:
+  modules:
+    rebalancer:
+      config:
+        balance_config_file_selector:
+          contents:
+            suggested-value: ucp/plugins/ChristmasCalendar-Balance-*/resources/balance/calendar.json
+    running-units:
+      config:
+        spearmen:
+          running:
+            general:
+              contents:
+                suggested-value: true
+    ucp2-legacy:
+      config:
+        o_fix_ladderclimb:
+          enabled:
+            contents:
+              suggested-value: true
+        u_fireballistafix:
+          enabled:
+            contents:
+              suggested-value: true
+        u_fix_lord_animation_stuck_movement:
+          enabled:
+            contents:
+              suggested-value: true
+        u_fix_applefarm_blocking:
+          enabled:
+            contents:
+              suggested-value: true
+        u_tanner_fix:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_fletcher_bug:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_baker_disappear:
+          enabled:
+            contents:
+              suggested-value: true
+        o_fix_moat_digging_unit_disappearing:
+          enabled:
+            contents:
+              suggested-value: true
+        u_arabwall:
+          enabled:
+            contents:
+              suggested-value: true
+        o_firecooldown:
+          contents:
+            suggested-value:
+              enabled: false
+              sliderValue: 2000
+        o_healer:
+          enabled:
+            contents:
+              suggested-value: true
+        o_responsivegates:
+          enabled:
+            contents:
+              suggested-value: true
+        o_armory_marketplace_weapon_order_fix:
+          enabled:
+            contents:
+              suggested-value: false
+        o_increase_path_update_tick_rate:
+          enabled:
+            contents:
+              suggested-value: true
+        fix_apple_orchard_build_size:
+          enabled:
+            contents:
+              suggested-value: false
+        o_change_siege_engine_spawn_position_catapult:
+          enabled:
+            contents:
+              suggested-value: false
+        o_stop_player_keep_rotation:
+          enabled:
+            contents:
+              suggested-value: false
+  plugins: {}
+meta:
+  version: 1.0.0

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door13",
+  "mission_name": "Door 13",
+  "mission_kind": "scenario",
+  "text_description": [
+    "We killed one of the Wolf's commanders. Here we",
+    "meet Saladin's two sons, Wazir \"The Terrible\" and",
+    "Wazir \"The Scourge\". There is only one way:",
+    "destroy their castles and take them hostage to",
+    "torture them. They must reveal how to open this",
+    "damn safe!",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door13 of the Christmas Calendar made by Krarilotus: We killed one of the Wolf's commanders. Now that we showed resistance to his claim, he will hunt us down for sure. But all we want is to dispel this magic or at least, solve the mystery. Finally, we got to the other side of the mountains, but a Rat has followed our tracks. Here we meet Saladin's two sons, also known by the names Wazir \"The Terrible\" and Wazir \"The Scourge\". They have their own alliance with the local landlords. And they dont seem happy, especially as we have killed their father... There is only one way: destroy their castles and take them hostage to torture them. They must reveal how to open this damn safe! They control the local market on important goods like stone, wheat, hops and even leather armo- ah no thats just sold out.What's this? You sense something... maybe they hate the Rat, the vasal of the Wolf, even more than you....",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

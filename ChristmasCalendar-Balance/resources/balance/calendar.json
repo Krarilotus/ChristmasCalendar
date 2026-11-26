@@ -1,0 +1,28 @@
+{
+  "buildings": {
+    "Blacksmith": {
+      "cost": [20, 0, 0, 0, 100]
+    },
+    "Marketplace": {
+      "cost": [0, 0, 0, 0, 0]
+    }
+  },
+  "units": {
+    "European knight": {
+      "health": 25000
+    },
+    "Arabian swordsman": {
+      "xbowDamage": 3000
+    },
+    "European spearman": {
+      "arrowDamage": 2000,
+      "xbowDamage": 9999
+    },
+    "Ladderman": {
+      "arrowDamage": 420,
+      "stoneDamage": 1000,
+      "xbowDamage": 1000,
+      "goldCost": 20
+    }
+  }
+}

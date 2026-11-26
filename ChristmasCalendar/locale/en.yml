@@ -1,0 +1,36 @@
+door01_story: |
+  ## Door 1
+
+  ![Overview of the map of door 1](doors/Door01/Door01_preview.jpg)
+
+  A loud squeaking noise escapes the hinge of this old portal into the world of Crusader… *how long has this been closed?*
+
+  You are in a medieval fantasy setting, where you’ll follow the rules of Stronghold Crusader. We have shot a picture to give an overview of the upcoming mission, look at it above to grasp the urgency of the situation.
+
+  **Your Lord starts in the left bottom corner, accompanied by an army**, which was provided to you by your friend [**Emir**](#color:#0000ff). **The first thing you will see is your demolished castle** on the right-hand side, surrounded by your enemies: The [**Snake**](#color:purple), the [**Rat**](#color:green) and [**Saladin**](#color:#008b8b).
+
+  [**Sultan**](#color:#b8860b) is protecting the northern gate of Saladin’s castle, while [**Sheriff**](#color:#000000) engrosses the top part of the map, pressuring Emir in an uphill battle.
+
+  This is the time to **plan your strategy ahead**. Your initial forces include a few engineers to siege an enemy castle, but you will not have access to shields.
+
+  As promised, there are some hints with every map. I advise you to only peek, in cases of severe struggle:
+
+  [Hint 1](#page:door01_hint1) [Hint 2](#page:door01_hint2) [Hint 3](#page:door01_hint3) [Hint 4](#page:door01_hint4) [Hint 5](#page:door01_hint5) [Hint 6](#page:door01_hint6) [Hint 7](#page:door01_hint7)
+
+  **Its time to head into battle. Have fun and good luck.**
+
+  by Krarilotus
+door01_hint1: |
+  If you need reinforcements to target a specific enemy or you are running short on supplies, Emir might be the one to ask for it.
+door01_hint2: |
+  For a small population, the maximum positive fear factor fighting bonus is already achieved by building 5 good things.
+door01_hint3: |
+  Engineers don't have to die with their manned siege engine and can be reused.
+door01_hint4: |
+  Fire throwers can cause hefty damage. I'd say either avoid staying on low ground in their range or kill them before marching at a castle.
+door01_hint5: |
+  Taking control over enemy defense structures with your own troops by climbing their staircases will give you an advantage while taking it from them at the same time.
+door01_hint6: |
+  Mangonels and trebuchets are great tools for sieging big castles. Trebuchets can outrange ballista towers by target firing with attack command in front of them.
+door01_hint7: |
+  Killing Lords will increase your army limit to take on stronger enemies.

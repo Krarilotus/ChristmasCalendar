@@ -1,0 +1,22 @@
+{
+  "name": "Abbot",
+  "description": "Normal difficulty of the Christmas Calendar for Abbot, derived from the hard AI AIC Tactics: He keeps his monks together and sends them after reachable targets.",
+  "author": "Krarilotus",
+  "link": "https://github.com/Krarilotus/ChristmasCalendar",
+  "version": "1.2.1",
+  "defaultLang": "de",
+  "supportedLang": [
+    "de",
+    "en"
+  ],
+  "switched": {
+    "binks": false,
+    "speech": false,
+    "aic": true,
+    "aiv": false,
+    "lord": true,
+    "startTroops": true,
+    "lines": false,
+    "portrait": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door12",
+  "mission_name": "Door 12",
+  "mission_kind": "scenario",
+  "text_description": [
+    "The North-West is at war with the South-East.",
+    "Nobody asked for you, but you have also set foot",
+    "in this land. Maybe you can use their conflict for",
+    "your own benefit to rule them all? Both Rats have",
+    "already chosen you as an easy victim for their",
+    "assaults!",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door 12 of the Christmas Calendar 2019 made by Krarilotus: The North-West is at war with the South-East. Nobody asked for you, but you have also set foot in this land. Maybe you can use their conflict for your own benefit to rule them all? It seems quite difficult, as you don't have any apparent resource income... and oh no, both Rats have already chosen you as an easy victim for their assaults! They block our market's path to the farmlands. If we want any crops, we will have to harvest them ourselves. At least we can buy flour. You have setup a good base economy, so now it is just a matter of time, until you overwhelm them and conquer this land, isn't it my liege? Your cruel hand will lead to victory and glory!",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

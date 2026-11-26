@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door04",
+  "mission_name": "Door 4",
+  "mission_kind": "scenario",
+  "text_description": [
+    "These filthy assassins lurk behind the fourth",
+    "door. They come from all sides. Be aware and",
+    "protect yourself, before they come for your",
+    "lord... Keep an eye out for him, and safeguard him",
+    "back to his keep, where he belongs!",
+    "",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door4 of the Christmas Calendar made by Krarilotus: These filthy assassins lurk behind the fourth door. They come from all sides. Be aware and protect yourself, before they come for your lord... and by the way, your lord just returned from his journy to the western continent. He was shocked by the availability of mercenaries. He now wants to buy people and enslave them himself. Keep an eye out for him, and safeguard him back to his keep, where he belongs! Oh, and one more thing, we are running low on stone.... ",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

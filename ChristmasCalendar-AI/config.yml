@@ -1,0 +1,421 @@
+config-sparse:
+  modules:
+    aiSwapper:
+      config:
+        ai:
+          rat:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Rat (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Rat/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Rat (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Rat/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Rat (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Rat/
+                  active: true
+          snake:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Snake (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Snake/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Snake (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Snake/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Snake (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Snake/
+                  active: true
+          pig:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Pig (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Pig/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Pig (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Pig/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Pig (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Pig/
+                  active: true
+          wolf:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Wolf (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Wolf/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Wolf (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Wolf/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Wolf (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Wolf/
+                  active: true
+          saladin:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Saladin (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Saladin/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Saladin (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Saladin/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Saladin (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Saladin/
+                  active: true
+          caliph:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Caliph (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Caliph/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Caliph (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Caliph/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Caliph (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Caliph/
+                  active: true
+          sultan:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Sultan (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Sultan/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Sultan (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Sultan/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Sultan (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Sultan/
+                  active: true
+          richard:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Richard (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Richard/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Richard (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Richard/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Richard (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Richard/
+                  active: true
+          frederick:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Frederick (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Frederick/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Frederick (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Frederick/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Frederick (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Frederick/
+                  active: true
+          phillip:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Phillip (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Phillip/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Phillip (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Phillip/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Phillip (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Phillip/
+                  active: true
+          wazir:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Wazir (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Wazir/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Wazir (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Wazir/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Wazir (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Wazir/
+                  active: true
+          emir:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Emir (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Emir/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Emir (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Emir/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Emir (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Emir/
+                  active: true
+          nizar:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Nizar (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Nizar/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Nizar (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Nizar/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Nizar (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Nizar/
+                  active: true
+          sheriff:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Sheriff (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Sheriff/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Sheriff (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Sheriff/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Sheriff (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Sheriff/
+                  active: true
+          marshal:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Marshal (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Marshal/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Marshal (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Marshal/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Marshal (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Marshal/
+                  active: true
+          abbot:
+            aic:
+              contents:
+                suggested-value:
+                  name: "Abbot (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Abbot/
+                  active: true
+            lord:
+              contents:
+                suggested-value:
+                  name: "Abbot (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Abbot/
+                  active: true
+            startTroops:
+              contents:
+                suggested-value:
+                  name: "Abbot (hard)"
+                  root: ucp/plugins/ChristmasCalendar-AI/resources/ai/hard/Abbot/
+                  active: true
+    aic-tactics:
+      config:
+        correctEngineerRoleCounting:
+          contents:
+            suggested-value: false
+    ucp2-legacy:
+      config:
+        ai_recruitstate_initialtimer:
+          contents:
+            suggested-value:
+              enabled: true
+              sliderValue: 2
+        ai_access:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_defense:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_tethers:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_buywood:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_towerengines:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_assaultswitch:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_rebuild:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_fix_laddermen_with_enclosed_keep:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_fix_crusader_archers_pitch:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_housing:
+          build_housing:
+            contents:
+              suggested-value:
+                enabled: true
+                sliderValue: 5
+          campfire_housing:
+            contents:
+              suggested-value:
+                enabled: true
+                sliderValue: 7
+          delete_housing:
+            enabled:
+              contents:
+                suggested-value: true
+        ai_attacklimit:
+          contents:
+            suggested-value:
+              enabled: true
+              sliderValue: 450
+        ai_attackwave:
+          contents:
+            suggested-value:
+              enabled: true
+              sliderValue: 7
+        ai_attacktarget:
+          contents:
+            required-value:
+              enabled: false
+              choice: ''
+        ai_nosleep:
+          enabled:
+            contents:
+              suggested-value: true
+        ai_demolish:
+          ai_demolish_walls:
+            enabled:
+              contents:
+                suggested-value: true
+          ai_demolish_trapped:
+            enabled:
+              contents:
+                suggested-value: true
+          ai_demolish_eco:
+            enabled:
+              contents:
+                suggested-value: false
+        ai_addattack:
+          contents:
+            suggested-value:
+              enabled: true
+              choice: relative
+              choices:
+                absolute:
+                  slider: 5
+                relative:
+                  slider: 0.2
+        ai_recruitinterval:
+          enabled:
+            contents:
+              suggested-value: false
+  plugins: {}
+meta:
+  version: 1.0.0

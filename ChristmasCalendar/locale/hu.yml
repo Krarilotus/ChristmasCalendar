@@ -1,0 +1,36 @@
+door01_story: |
+  ## 1. ajtó
+
+  ![A(z) 1. ajtó térképének áttekintése](doors/Door01/Door01_preview.jpg)
+
+  Hangos nyikorgás szakad fel a Crusader világába nyíló régi kapu sarokvasából… *mióta lehetett ez bezárva?*
+
+  Egy középkori fantasy világban találod magad, ahol a Stronghold Crusader szabályai érvényesek. Készítettünk egy áttekintő képet a küszöbönálló küldetésről — vess rá egy pillantást fent, hogy felmérd a helyzet sürgősségét.
+
+  **A lordod a bal alsó sarokban kezd egy sereg kíséretében**, amelyet barátod, [**Emír**](#color:#0000ff) bocsátott a rendelkezésedre. **Az első dolog, amit meglátsz, a lerombolt várad** a jobb oldalon, ellenségektől körülvéve: a [**Kígyó**](#color:purple), a [**Patkány**](#color:green) és [**Szaladin**](#color:#008b8b).
+
+  [**Szultán**](#color:#b8860b) védi Szaladin várának északi kapuját, míg [**Seriff**](#color:#000000) elfoglalja a térkép felső részét, hegynek felfelé vívott harcban szorongatva Emírt.
+
+  Itt az ideje **előre megtervezni a stratégiádat**. A kezdő csapataid között van néhány mérnök egy ellenséges vár ostromához, de hordozható pajzsokhoz nem fogsz hozzáférni.
+
+  Ahogy ígértem, minden pályához jár néhány tipp. Azt tanácsolom, csak akkor less beléjük, ha tényleg nagy bajban vagy:
+
+  [Tipp 1](#page:door01_hint1) [Tipp 2](#page:door01_hint2) [Tipp 3](#page:door01_hint3) [Tipp 4](#page:door01_hint4) [Tipp 5](#page:door01_hint5) [Tipp 6](#page:door01_hint6) [Tipp 7](#page:door01_hint7)
+
+  **Ideje csatába indulni. Jó szórakozást és sok szerencsét!**
+
+  készítette: Krarilotus
+door01_hint1: |
+  Ha erősítésre van szükséged egy adott ellenség ellen, vagy kifogysz a nyersanyagból, érdemes Emírtől segítséget kérned.
+door01_hint2: |
+  Kis népesség mellett a pozitív félelemfaktor maximális harci bónuszát már 5 jó dolog megépítésével elérheted.
+door01_hint3: |
+  A mérnököknek nem kell elpusztulniuk az ostromgépükkel együtt — kiszállhatnak és újra felhasználhatók.
+door01_hint4: |
+  A tűzhajítók hatalmas sebzést tudnak okozni. Vagy kerüld el az alacsonyabb terepet a lőtávjukon belül, vagy iktasd ki őket, mielőtt vár ellen vonulsz.
+door01_hint5: |
+  Ha a saját csapataiddal felmászol az ellenség lépcsőin és elfoglalod a védelmi építményeit, egyszerre szerzel előnyt magadnak és veszed el azt tőlük.
+door01_hint6: |
+  A kővetőgépek és a hajítógépek remek eszközök nagy várak ostromához. A hajítógépek túllövik a ballisztatornyokat, ha támadási paranccsal közvetlenül eléjük célzol.
+door01_hint7: |
+  Ellenséges lordok kiiktatásával növelheted a hadsereg-limitedet, hogy erősebb ellenfelekkel is megbirkózz.

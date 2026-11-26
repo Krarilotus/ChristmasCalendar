@@ -1,0 +1,36 @@
+door01_story: |
+  ## Kapı 1
+
+  ![1. kapının haritasına genel bakış](doors/Door01/Door01_preview.jpg)
+
+  Crusader dünyasına açılan bu eski geçidin menteşelerinden yüksek bir gıcırtı yükseliyor… *ne zamandır kapalıydı acaba?*
+
+  Kendini Stronghold Crusader kurallarının geçerli olduğu bir orta çağ fantastik dünyasında buluyorsun. Önündeki göreve dair genel bir görünüm çektik — durumun aciliyetini kavramak için yukarıdaki resme bir göz at.
+
+  **Lordun, sol alt köşede bir orduyla birlikte başlıyor**; bu orduyu sana dostun [**Emir**](#color:#0000ff) sağladı. **İlk göreceğin şey, sağ taraftaki yerle bir olmuş kalen olacak**; etrafı düşmanlarınla çevrili: [**Yılan**](#color:purple), [**Fare**](#color:green) ve [**Selahaddin**](#color:#008b8b).
+
+  [**Sultan**](#color:#b8860b) Selahaddin'in kalesinin kuzey kapısını korurken [**Şerif**](#color:#000000) haritanın üst kısmını kaplıyor ve Emir'i yokuş yukarı bir savaşta baskı altına alıyor.
+
+  Şimdi **stratejini önceden planlama** zamanı. Başlangıç kuvvetlerinde düşman kalesini kuşatmak için birkaç mühendis bulunuyor, ancak taşınabilir kalkanlara erişimin olmayacak.
+
+  Söz verdiğim gibi her haritayla birlikte birkaç ipucu da var. Gerçekten çok zorlanmadıkça bakmamanı tavsiye ederim:
+
+  [İpucu 1](#page:door01_hint1) [İpucu 2](#page:door01_hint2) [İpucu 3](#page:door01_hint3) [İpucu 4](#page:door01_hint4) [İpucu 5](#page:door01_hint5) [İpucu 6](#page:door01_hint6) [İpucu 7](#page:door01_hint7)
+
+  **Savaşa atılma zamanı. İyi eğlenceler ve bol şans!**
+
+  Krarilotus tarafından
+door01_hint1: |
+  Belirli bir düşmana karşı takviyeye ihtiyacın olursa ya da kaynakların tükeniyorsa, yardım istemek için doğru kişi Emir olabilir.
+door01_hint2: |
+  Küçük bir nüfus için olumlu korku faktörünün sağladığı en yüksek savaş bonusu, yalnızca 5 olumlu yapı kurarak elde edilir.
+door01_hint3: |
+  Mühendisler kullandıkları kuşatma aracıyla birlikte ölmek zorunda değildir; aracı bırakıp yeniden kullanılabilirler.
+door01_hint4: |
+  Ateş atıcılar ağır hasar verebilir. Ya menzilleri içindeki alçak arazide durmaktan kaçın ya da kaleye yürümeden önce onları ortadan kaldır.
+door01_hint5: |
+  Kendi birliklerinle merdivenlerinden tırmanıp düşman savunma yapılarını ele geçirmek, hem sana avantaj kazandırır hem de bunu onlardan alır.
+door01_hint6: |
+  Mangoneller ve trebuşeler büyük kaleleri kuşatmak için harika araçlardır. Trebuşeler, saldırı komutuyla tam önlerine nişan alarak balista kulelerinin menzilinin dışından onları vurabilir.
+door01_hint7: |
+  Düşman lordlarını öldürmek ordu limitini artırır, böylece daha güçlü düşmanlarla baş edebilirsin.

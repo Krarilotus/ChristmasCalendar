@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door20",
+  "mission_name": "Door 20",
+  "mission_kind": "scenario",
+  "text_description": [
+    "You have tortured Saladin's sons, the Wazirs to",
+    "death, but the only information you have gotten so",
+    "far is that the safe contains nothing. You have no",
+    "choice but to march onwards, to the lands of",
+    "production. Therefore, we need to pass the great",
+    "wall. The Wolf has sent his two corporals Lenny",
+    "and Reus to help the gatekeeper Fred to stop you.",
+    ""
+  ],
+  "scenario_briefing": "Door20 of the Christmas Calendar made by Krarilotus: You have tortured Saladin's sons, the  Wazirs to death, but the only information you have gotten so far is that the safe contains nothing. The sons laughed at you for trying to open it. Upon his death, the \"Terrible\" said: \"It will open wenn it's time...\" Time for what?! It seems like the spell still controls you. You have no choice but to march onwards, to the lands of production. The lands where most of the goods are made these days. Therefore, we need to pass the great wall. Surprisingly the Wolf has sent his two corporals Lenny and Reus to help the gatekeeper Fred to stop you. They are grouping up in their headquarter, plotting to launch a big siege against you. The Wolf puts so much effort to stand in your way, maybe he knows more about the spell? There are two lost souls, who also want to get in, but are locked out with you: The Vulture and Richard. Unfortunately, they wont cooperate. Let's crush them all!",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

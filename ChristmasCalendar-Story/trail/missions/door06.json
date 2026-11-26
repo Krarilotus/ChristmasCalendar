@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door06",
+  "mission_name": "Door 6",
+  "mission_kind": "scenario",
+  "text_description": [
+    "Finally, Saladin is dead. You found a big safe",
+    "with a magic list of people engraved under his",
+    "keep. A few days later you reach a valley, deep in",
+    "the mountains. Oh crap! A trap... The Rat is",
+    "blocking your path. Maybe you can pass Ratty",
+    "somehow and claim that abandoned village in the",
+    "west?",
+    ""
+  ],
+  "scenario_briefing": "Door6 of the Christmas Calendar made by Krarilotus. Finally, Saladin is dead. This old man blinked once. Wait, what is that? You found a big safe with a magic list of people engraved under his keep. You look at it and you know, deep down, you just messed up. Saladin had to be under some kind of force... And, before you know it, you feel some spell forcing you to continue Saladin's legacy. But how? You don't even know how to open the safe yet! What does this mean? You take your loyal men and march onwards, to search for Saladin's sons, maybe they know how to open this giant magic box. A few days later you reach a valley, deep in the mountains. Saladin's sons are right behind, but what is that? Oh crap! A trap... The Rat is blocking your path. He and the Pig are here on command of the mighty Wolf. He must have heard of Saladin's defeat and now seeks to claim the land for himself. Maybe you can pass Ratty somehow and claim that abandoned village in the west? It's time to fight!",
+  "unit_limit": "formula 9900 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

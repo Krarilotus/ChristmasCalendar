@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door21",
+  "mission_name": "Door 21",
+  "mission_kind": "scenario",
+  "text_description": [
+    "During their vacation to the eastern oasis of a",
+    "dreamworld paradise, your Lord and his friend",
+    "Sultan were abducted by Richard's forces. Richard",
+    "and Frederick are torturing your Lord and Sultan,",
+    "and intend to take control of the castle too. You",
+    "can not allow the castle to fall!",
+    "",
+    ""
+  ],
+  "scenario_briefing": "Door21 of the Christmas Calendar 2019 made by Krarilotus: During their vacation to the eastern oasis of a dreamworld paradise, your Lord and his friend Sultan were abducted by Richard's forces. Richard has long been a pain in the side and has proven this once again. You are untrained as a commander of troops, but the Lord has put his trust in you. Many of the workers are ill or untrained, and thus only the fletcher is able to help. Your vast knowledge in assassin work will allow you to train assassins. What a beautiful full circle that would be, to meet the Lord by trying to assassinate him, to then save him later on through similar methods. Down to business. Richard and Frederick are torturing your Lord and Sultan, and intend to take control of the castle too. You can not allow the castle to fall!",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

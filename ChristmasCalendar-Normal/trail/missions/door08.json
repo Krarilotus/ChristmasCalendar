@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/mission.schema.json",
+  "format": 1,
+  "map_name": "Door08",
+  "mission_name": "Door 8",
+  "mission_kind": "scenario",
+  "text_description": [
+    "You and Phillip traveled to these lands on your",
+    "mighty horses, but you didnt bring any",
+    "siegeequipment, nor the contract for the",
+    "mercenaries. Now you are divided by a party of",
+    "angry drunken members of the XBox Gang. Can you",
+    "help out your buddy with some economical goods,",
+    "while withstanding the drunken Boxers on your own",
+    "too?"
+  ],
+  "scenario_briefing": "Door8 of the Christmas Calendar made by Krarilotus: You and Phillip traveled to these lands on your mighty horses, but you didnt bring any siegeequipment, nor the contract for the mercenaries. Very unfortunate, as you were split up at some point and now you are divided by a party of angry drunken members of the XBox Gang. Can you help out your buddy with some economical goods, while withstanding the drunken Boxers on your own too? Good luck, you'll need it!",
+  "unit_limit": "formula 2500 40",
+  "players": [
+    {
+      "gold": 0
+    }
+  ]
+}

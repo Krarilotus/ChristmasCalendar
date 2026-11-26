@@ -1,0 +1,223 @@
+{
+  "$schema": "https://github.com/gynt/ucp-extension-custom-skirmish-trails/resources/trail-settings.schema.json",
+  "trail_type": "Extreme",
+  "trail_id": "christmas-calendar-hard",
+  "trail_title": "A Crusader's Christmas",
+  "trail_summary": "One door a day, from 1 December",
+  "trail_locked_text": "This door opens on {date}.",
+  "trail_missions": {
+    "base_name": "calendar-trail"
+  },
+  "trail_text_files": "texts/",
+  "chickens": 3,
+  "trail_route": {
+    "door01": {
+      "file": "missions/door01.json",
+      "position": {
+        "x": 50,
+        "y": 166
+      }
+    },
+    "door02": {
+      "file": "missions/door02.json",
+      "position": {
+        "x": 81,
+        "y": 170
+      },
+      "requires": [
+        "door01"
+      ]
+    },
+    "door03": {
+      "file": "missions/door03.json",
+      "position": {
+        "x": 132,
+        "y": 149
+      },
+      "requires": [
+        "door02"
+      ]
+    },
+    "door04": {
+      "file": "missions/door04.json",
+      "position": {
+        "x": 178,
+        "y": 142
+      },
+      "requires": [
+        "door03"
+      ]
+    },
+    "door05": {
+      "file": "missions/door05.json",
+      "position": {
+        "x": 248,
+        "y": 126
+      },
+      "requires": [
+        "door04"
+      ]
+    },
+    "door06": {
+      "file": "missions/door06.json",
+      "position": {
+        "x": 308,
+        "y": 117
+      },
+      "requires": [
+        "door05"
+      ]
+    },
+    "door07": {
+      "file": "missions/door07.json",
+      "position": {
+        "x": 376,
+        "y": 108
+      },
+      "requires": [
+        "door06"
+      ]
+    },
+    "door08": {
+      "file": "missions/door08.json",
+      "position": {
+        "x": 500,
+        "y": 88
+      },
+      "requires": [
+        "door07"
+      ]
+    },
+    "door09": {
+      "file": "missions/door09.json",
+      "position": {
+        "x": 558,
+        "y": 102
+      },
+      "requires": [
+        "door08"
+      ]
+    },
+    "door10": {
+      "file": "missions/door10.json",
+      "position": {
+        "x": 565,
+        "y": 126
+      },
+      "requires": [
+        "door09"
+      ]
+    },
+    "door11": {
+      "file": "missions/door11.json",
+      "position": {
+        "x": 623,
+        "y": 143
+      },
+      "requires": [
+        "door10"
+      ]
+    },
+    "door12": {
+      "file": "missions/door12.json",
+      "position": {
+        "x": 643,
+        "y": 180
+      },
+      "requires": [
+        "door11"
+      ]
+    },
+    "door13": {
+      "file": "missions/door13.json",
+      "position": {
+        "x": 444,
+        "y": 110
+      },
+      "requires": [
+        "door12"
+      ]
+    },
+    "door14": {
+      "file": "missions/door14.json",
+      "position": {
+        "x": 676,
+        "y": 230
+      },
+      "requires": [
+        "door13"
+      ]
+    },
+    "door15": {
+      "file": "missions/door15.json",
+      "position": {
+        "x": 578,
+        "y": 308
+      },
+      "requires": [
+        "door14"
+      ]
+    },
+    "door16": {
+      "file": "missions/door16.json",
+      "position": {
+        "x": 495,
+        "y": 251
+      },
+      "requires": [
+        "door15"
+      ]
+    },
+    "door17": {
+      "file": "missions/door17.json",
+      "position": {
+        "x": 480,
+        "y": 181
+      },
+      "requires": [
+        "door16"
+      ]
+    },
+    "door18": {
+      "file": "missions/door18.json",
+      "position": {
+        "x": 454,
+        "y": 138
+      },
+      "requires": [
+        "door17"
+      ]
+    },
+    "door19": {
+      "file": "missions/door19.json",
+      "position": {
+        "x": 363,
+        "y": 135
+      },
+      "requires": [
+        "door18"
+      ]
+    },
+    "door20": {
+      "file": "missions/door20.json",
+      "position": {
+        "x": 712,
+        "y": 311
+      },
+      "requires": [
+        "door19"
+      ]
+    },
+    "door21": {
+      "file": "missions/door21.json",
+      "position": {
+        "x": 301,
+        "y": 174
+      },
+      "requires": [
+        "door20"
+      ],
+      "end": true
+    }
+  }
+}
